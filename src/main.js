@@ -368,7 +368,7 @@ define(function(require, exports, module) {
                     console.log(App.MainView.Layout.options.ratios);
                     Timer.setTimeout(function(){
                         App.MainView.Layout.setRatios(App.MainView.Layout.options.ratios);
-                    },160);
+                    },1000);
                 });
 
                 App.Views.MainTopBar.getSize = function(val){
