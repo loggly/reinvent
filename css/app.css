@@ -21,24 +21,53 @@
   background: #000;
 }
 
-.main-topbar-content div:nth-child(1) {
+.main-topbar-content-logo {
   background: #000;
   color: white;
 
-  line-height: 68px;
-  font-size: 36px;
+  line-height: 60px;
+  font-size: 24px;
 
-  padding: 0 10px;
+  /*padding: 0 10px;*/
 }
 
-.main-topbar-content div:nth-child(2) {
+.main-topbar-content-logo img {
+  height: 60px;
+}
+
+.main-topbar-content-sharebutton {
+
+  text-align: right;
+
+  background: #000;
+  color: white;
+
+  line-height: 60px;
+  font-size: 14px;
+
+  padding: 0 10px 0 0;
+
+}
+
+.main-topbar-content-sharebutton i.icon1 {
+  font-size: 18px;
+  padding: 0 8px;
+}
+
+.main-topbar-content-sharebutton i.icon2 {
+  font-size: 28px;
+  padding-left: 8px;
+}
+
+.main-topbar-content-guidetext {
   background: #e6873b;
   color: #000;
 
   text-align: center;
 
-  line-height: 36px;
+  line-height: 24px;
   font-size: 14px;
+
 }
 
 
@@ -76,7 +105,7 @@
 
   border-radius: 3px;
   -webkit-border-radius: 3px;
-  
+
   -webkit-box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
   box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
@@ -107,7 +136,7 @@
 /* Party List */
 
 .party-list-item {
-
+  padding: 8px;
 }
 
 .party-list-item > div {
@@ -117,6 +146,10 @@
 
   border-radius: 3px;
   -webkit-border-radius: 3px;
+
+  -webkit-box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
 }
 
 .party-list-item > div > div.name {
@@ -161,7 +194,7 @@
 /* Speaker List */
 
 .speaker-list-item {
-
+  padding: 8px;
 }
 
 .speaker-list-item > div {
@@ -171,6 +204,10 @@
 
   border-radius: 3px;
   -webkit-border-radius: 3px;
+
+  -webkit-box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
 }
 
 .speaker-list-item > div .session {

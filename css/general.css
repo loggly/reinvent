@@ -601,7 +601,7 @@ iframe {
   padding-left: 8px;
   text-align: center;
 
-  line-height: 60px;
+  line-height: 44px;
 }
 
 .normal-header.dark-text-header {
@@ -616,7 +616,7 @@ iframe {
 .normal-header.title {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .normal-header.title img {
@@ -662,7 +662,7 @@ iframe {
   color: white;
 
   font-size: 11px;
-  line-height: 60px;
+  line-height: 44px;
 
   text-align: center;
 }
@@ -710,7 +710,7 @@ iframe {
   /*color: #87603E;*/
 
   font-size: 30px;
-  line-height: 60px;
+  line-height: 44px;
 }
 
 .header-tab-icon-text-big.dark-text,

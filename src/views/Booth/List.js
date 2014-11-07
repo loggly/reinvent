@@ -130,7 +130,7 @@ define(function(require, exports, module) {
 
         // add each template
         BoothList.forEach(function(boothItem){
-            
+            // console.log(boothItem);
             var Booth = new Surface({
                 content: template_booth(boothItem),
                 size: [undefined, true],

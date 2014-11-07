@@ -130,7 +130,7 @@ define(function(require, exports, module) {
 
         // add each template
         SpeakerList.forEach(function(speakerItem){
-            console.log(speakerItem);
+            // console.log(speakerItem);
             var Speaker = new Surface({
                 content: template_speaker(speakerItem),
                 size: [undefined, true],

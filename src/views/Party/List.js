@@ -130,7 +130,7 @@ define(function(require, exports, module) {
 
         // add each template
         PartyList.forEach(function(partyItem){
-            console.log(partyItem);
+            // console.log(partyItem);
             var Party = new Surface({
                 content: template_party(partyItem),
                 size: [undefined, true],

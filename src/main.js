@@ -201,7 +201,7 @@ define(function(require, exports, module) {
                 Icon: {
                     w: 60 // width
                 },
-                size: 60 // height, width always undefined width
+                size: 44 // height, width always undefined width
             },
             Footer: {
                 size: 0 // height, width always undefined
@@ -359,12 +359,45 @@ define(function(require, exports, module) {
                     classes: ['main-topbar-background']
                 });
 
-                App.Views.MainTopBar.Surface = new Surface({
-                    content: template_mainTopBar(),
-                    size: [undefined, true],
-                    classes: ['main-topbar-content']
+                // Sequential Layout (vertical) holder
+                App.Views.MainTopBar.Layout = new SequentialLayout();
+                App.Views.MainTopBar.Layout.Views = [];
+
+                // Flexible Layout for Icon/Share button
+                App.Views.MainTopBar.TopLayout = new FlexibleLayout({
+                    direction: 0,
+                    ratios: [1, true]
                 });
-                App.Views.MainTopBar.Surface.on('deploy', function(){
+                App.Views.MainTopBar.TopLayout.SizeMod = new StateModifier({
+                    size: [undefined, 60]
+                });
+                App.Views.MainTopBar.TopLayout.RN = new RenderNode(App.Views.MainTopBar.TopLayout.SizeMod);
+                App.Views.MainTopBar.TopLayout.RN.add(App.Views.MainTopBar.TopLayout);
+                App.Views.MainTopBar.TopLayout.Views = [];
+
+                App.Views.MainTopBar.TopLayout.Icon = new Surface({
+                    content: '<img src="img/loggly_white_on_black.png" />',
+                    size: [undefined, undefined],
+                    classes: ['main-topbar-content-logo']
+                });
+
+                App.Views.MainTopBar.TopLayout.Share = new Surface({
+                    content: 'share this guide <i class="icon icon1 ion-ios7-arrow-thin-right"></i><i class="icon icon2 ion-android-share"></i>',
+                    size: [200, undefined],
+                    classes: ['main-topbar-content-sharebutton']
+                });
+
+                App.Views.MainTopBar.TopLayout.Views.push(App.Views.MainTopBar.TopLayout.Icon);
+                App.Views.MainTopBar.TopLayout.Views.push(App.Views.MainTopBar.TopLayout.Share);
+                App.Views.MainTopBar.TopLayout.sequenceFrom(App.Views.MainTopBar.TopLayout.Views);
+
+                // QuickNoteSurface ("the unofficial...")
+                App.Views.MainTopBar.QuickNoteSurface = new Surface({
+                    content: 'The Unofficial Crowdsourced AWS re:Invent Guide',
+                    size: [window.innerWidth, true],
+                    classes: ['main-topbar-content-guidetext']
+                });
+                App.Views.MainTopBar.QuickNoteSurface.on('deploy', function(){
                     console.log(App.MainView.Layout.options.ratios);
                     Timer.setTimeout(function(){
                         App.MainView.Layout.setRatios(App.MainView.Layout.options.ratios);
@@ -373,10 +406,16 @@ define(function(require, exports, module) {
 
                 App.Views.MainTopBar.getSize = function(val){
                     console.info('size');
-                    return App.Views.MainTopBar.Surface.getSize(val);
+                    return App.Views.MainTopBar.Layout.getSize(val);
                 };
 
-                App.Views.MainTopBar.add(Utils.usePlane('mainTopBar')).add(App.Views.MainTopBar.Surface);
+                App.Views.MainTopBar.Layout.Views.push(App.Views.MainTopBar.TopLayout.RN);
+                App.Views.MainTopBar.Layout.Views.push(App.Views.MainTopBar.QuickNoteSurface);
+
+                // sequenceFrom for main Sequential Layout
+                App.Views.MainTopBar.Layout.sequenceFrom(App.Views.MainTopBar.Layout.Views);
+
+                App.Views.MainTopBar.add(Utils.usePlane('mainTopBar')).add(App.Views.MainTopBar.Layout);
 
             };
             createMainTopbar();
