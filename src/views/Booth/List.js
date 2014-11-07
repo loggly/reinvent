@@ -130,15 +130,22 @@ define(function(require, exports, module) {
 
         // add each template
         BoothList.forEach(function(boothItem){
-            console.log(boothItem);
+            
             var Booth = new Surface({
                 content: template_booth(boothItem),
                 size: [undefined, true],
                 classes: ['booth-list-item']
             });
+            Booth.View = new View();
+            Booth.View.getSize = function(){
+                // console.log(Booth._trueSize);
+                return [undefined, Booth._trueSize ? Booth._trueSize[1]:1];
+            };
             Booth.pipe(that.contentView.Scrollview);
 
-            that.contentView.Scrollview.Views.push(Booth);
+            Booth.View.add(Booth);
+
+            that.contentView.Scrollview.Views.push(Booth.View);
         });
 
     };

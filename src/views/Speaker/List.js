@@ -136,9 +136,16 @@ define(function(require, exports, module) {
                 size: [undefined, true],
                 classes: ['speaker-list-item']
             });
+            Speaker.View = new View();
+            Speaker.View.getSize = function(){
+                // console.log(Speaker._trueSize);
+                return [undefined, Speaker._trueSize ? Speaker._trueSize[1]:1];
+            };
             Speaker.pipe(that.contentView.Scrollview);
 
-            that.contentView.Scrollview.Views.push(Speaker);
+            Speaker.View.add(Speaker);
+
+            that.contentView.Scrollview.Views.push(Speaker.View);
         });
 
     };

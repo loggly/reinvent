@@ -136,9 +136,17 @@ define(function(require, exports, module) {
                 size: [undefined, true],
                 classes: ['party-list-item']
             });
+            Party.View = new View();
+            Party.View.getSize = function(){
+                // console.log(Party._trueSize);
+                return [undefined, Party._trueSize ? Party._trueSize[1]:1];
+            };
             Party.pipe(that.contentView.Scrollview);
 
-            that.contentView.Scrollview.Views.push(Party);
+            Party.View.add(Party);
+
+            that.contentView.Scrollview.Views.push(Party.View);
+
         });
 
     };
