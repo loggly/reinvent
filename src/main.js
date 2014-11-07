@@ -229,15 +229,18 @@ define(function(require, exports, module) {
     // Google Analytics Plugin
     Utils.Analytics.init();
 
-    // Config file, symlinked (ln -s) into multiple directories
-    var ConfigXml = require('text!config.xml');
-    // Parse config.xml and set approprate App variables
-    App.Config = $($.parseXML(ConfigXml));
-    if(App.Config.find("widget").get(0).attributes.id.value.indexOf('.pub') !== -1){
-        App.Prod = true;
-        App.ConfigImportant.Version = App.Config.find("widget").get(0).attributes.version.value;
-        App.ConfigImportant.StatusBarBackgroundColor = App.Config.find("widget").find('preference[name="StatusBarBackgroundColor"]').get(0).attributes.value.value;
-    }
+    // // Config file, symlinked (ln -s) into multiple directories
+    // var ConfigXml = require('text!config.xml');
+    // // Parse config.xml and set approprate App variables
+    // App.Config = $($.parseXML(ConfigXml));
+    // if(App.Config.find("widget").get(0).attributes.id.value.indexOf('.pub') !== -1){
+    //     App.Prod = true;
+    //     App.ConfigImportant.Version = App.Config.find("widget").get(0).attributes.version.value;
+    //     App.ConfigImportant.StatusBarBackgroundColor = App.Config.find("widget").find('preference[name="StatusBarBackgroundColor"]').get(0).attributes.value.value;
+    // }
+    App.Prod = true;
+    App.ConfigImportant.Version = '0.1.0';
+    App.ConfigImportant.StatusBarBackgroundColor = '#000'; //App.Config.find("widget").find('preference[name="StatusBarBackgroundColor"]').get(0).attributes.value.value;
 
     // Run DeviceReady actions
     // - Push Notifications
