@@ -549,14 +549,14 @@ define(function(require, exports, module) {
                 // 0 - innermost
                 App.Views.SplashLoading.Logo = new ImageSurface({
                     // content: 'OddJob',
-                    content: 'img/alchemist_logo.png',
+                    content: 'img/loggly_logo_white_on_brown.png',
                     classes: ['splash-surface-default'],
                     properties: {
                         // 'backface-visibility' : 'visible'
                     },
                     // content: 'https://dl.dropboxusercontent.com/u/6673634/wehicle_square.svg',
                     // size: [window.innerWidth, 70]
-                    size: [228, 92]
+                    size: [250, 130]
                 });
                 App.Views.SplashLoading.Logo.useOpacity = 0;
                 var splashOpacity = 0;
