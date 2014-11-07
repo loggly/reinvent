@@ -690,13 +690,15 @@ define(function(require, exports, module) {
             // Start history watching
             // - don't initiate based on the first view, always restart
             var initialUrl = false;
-            if(1==1 && window.location.hash.toString() != ''){
+            if(window.location.hash.toString() != ''){
                 // Skip goto Home 
                 initialUrl = true;
                 Backbone.history.start();
+                // debugger;
             } else {
                 Backbone.history.start({silent: true}); 
                 App.history.navigate(''); // should go to a "loading" page while we figure out who is logged in
+                // debugger;
             }
 
 
@@ -773,12 +775,14 @@ define(function(require, exports, module) {
                 
                 // // Redirect after setting ajax credentials
                 // if(localUser && !initialUrl){
+                if(!initialUrl){
                     // Navigate to my Profiles page
                     Timer.setTimeout(function(){
                         // App.Views.MainFooter.Tabs.select('profiles');
                         App.history.navigate(App.Credentials.home_route);
                         // App.history.navigate('user/sentence');
                     }, 100);
+                }
                 // }
 
                 // Preload models
