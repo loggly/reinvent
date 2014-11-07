@@ -435,7 +435,7 @@ define(function(require, exports, module) {
                 var tmpTabs = App.Views.MainFooter.Tabs;
 
                 tmpTabs.defineSection('booths', {
-                    content: '<i class="icon ion-ios7-albums"></i><div><span class="ellipsis-all">Swag</span></div>',
+                    content: '<i class="icon ion-bag"></i><div><span class="ellipsis-all">Swag</span></div>',
                     onClasses: ['footer-tabbar-default', 'on'],
                     offClasses: ['footer-tabbar-default', 'off']
                 });
