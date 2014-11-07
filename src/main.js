@@ -336,9 +336,12 @@ define(function(require, exports, module) {
             //     console.log('After tick=' + App.MainContext.getSize());
             //     App.mainSize = App.MainContext.getSize();
             // });
-    
+            
+            console.error('MainContext');
             App.MainContext.on('resize', function(e) {
                 // Utils.Notification.Toast('Resized');
+                console.error('resize', App.mainSize);
+                alert(JSON.stringify(App.mainSize));
                 App.MainView.SizeMod.setSize(App.mainSize);
                 // document.body.setAttribute('style',"height:"+App.mainSize[1]+"px");
             }.bind(this));
