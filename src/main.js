@@ -239,6 +239,7 @@ define(function(require, exports, module) {
     //     App.ConfigImportant.StatusBarBackgroundColor = App.Config.find("widget").find('preference[name="StatusBarBackgroundColor"]').get(0).attributes.value.value;
     // }
     App.Prod = true;
+    App.Config = {};
     App.ConfigImportant.Version = '0.1.0';
     App.ConfigImportant.StatusBarBackgroundColor = '#000'; //App.Config.find("widget").find('preference[name="StatusBarBackgroundColor"]').get(0).attributes.value.value;
 
