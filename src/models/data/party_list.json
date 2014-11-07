@@ -1,0 +1,79 @@
+[
+  {
+    "Event":"Beer & Banter - free beer in Skytap booth",
+    "Who":"All attendees",
+    "Fee":"Free",
+    "Starttime":"11/12 16:00",
+    "Where":"Booth #104"
+  },
+  {
+    "Event":"2nd Watch: 2W After Party",
+    "Who":"Invite Only",
+    "Fee":"Free",
+    "Starttime":"11/12 21:00",
+    "Where":"V Bar"
+  },
+  {
+    "Event":"VictorOps: AWS re:Invent Pub Crawl",
+    "Who":"All attendees",
+    "Fee":"Free",
+    "Starttime":"11/12 17:30",
+    "Where":"V Bar"
+  },
+  {
+    "Event":"Pubcrawl at Aquanix",
+    "Who":"All attendees",
+    "Fee":"Free",
+    "Starttime":"11/12 17:30",
+    "Where":"Aquaknox"
+  },
+  {
+    "Event":"Gene Kim Book Signing and Giveaway",
+    "Who":"All attendees",
+    "Fee":"Free",
+    "Starttime":"11/12 11:00",
+    "Where":"Booth #742"
+  },
+  {
+    "Event":"DISYS client appreciation event",
+    "Who":"Invite Only",
+    "Fee":"Free",
+    "Starttime":"11/12 19:00",
+    "Where":"Lounge at Tao"
+  },
+  {
+    "Event":"Booth Crawl Prize Drawing! ",
+    "Who":"All attendees",
+    "Fee":"Free",
+    "Starttime":"11/12 17:30",
+    "Where":"Zeffirino"
+  },
+  {
+    "Event":"T2.microbrews, hosted by Evident.io and Cloudability",
+    "Who":"Invite Only",
+    "Fee":"Free",
+    "Starttime":"11/11 19:00",
+    "Where":"Public House"
+  },
+  {
+    "Event":"Pub Crawl @ Morels w/ Alfresco",
+    "Who":"All attendees",
+    "Fee":"Free",
+    "Starttime":"11/12 17:30",
+    "Where":"Morels @ the Palazzo"
+  },
+  {
+    "Event":"Evident.io Super Hero Pub Crawl",
+    "Who":"All attendees",
+    "Fee":"Free",
+    "Starttime":"11/12 17:30",
+    "Where":"Madame Tussauds"
+  },
+  {
+    "Event":"Nike Silicon Forest After-Party",
+    "Who":"All attendees",
+    "Fee":"Free",
+    "Starttime":"11/12 22:00",
+    "Where":"The Rockhouse"
+  }
+]
