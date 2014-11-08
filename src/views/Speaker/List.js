@@ -128,6 +128,11 @@ define(function(require, exports, module) {
     PageView.prototype.addSurfaces = function(){
         var that = this;
 
+        // sort
+        SpeakerList = _.sortBy(SpeakerList, function(item){
+            return item.Session.toString().toLowerCase();
+        });
+
         // add each template
         SpeakerList.forEach(function(speakerItem){
             // console.log(speakerItem);

@@ -52,6 +52,8 @@
 .main-topbar-content-sharebutton > div {
   display: table-cell;
   vertical-align: middle;
+
+  float: right;
 }
 
 .main-topbar-content-sharebutton span {
@@ -295,14 +297,14 @@
 .tip-list-item > div {
   padding: 8px 10px;
 
-  /*border: 1px solid #eee;*/
+  border: 1px solid #eee;
 
-  /*border-radius: 3px;
+  border-radius: 3px;
   -webkit-border-radius: 3px;
 
   -webkit-box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
-  box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);*/
+  box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
 
 }
 
@@ -320,6 +322,8 @@
   padding-left: 8px;
 
   color: #111;
+
+  word-wrap: break-word;
 }
 
 .tip-list-item .more-info-2 {
@@ -329,6 +333,8 @@
   padding-left: 16px;
 
   color: #333;
+
+  word-wrap: break-word;
 }
 
 

@@ -129,7 +129,12 @@ define(function(require, exports, module) {
         var that = this;
 
         this.createMapButton();
-        
+
+        // sort
+        PartyList = _.sortBy(PartyList, function(item){
+            return item.Event.toString().toLowerCase();
+        });
+
         // add each template
         PartyList.forEach(function(partyItem){
             // console.log(partyItem);
