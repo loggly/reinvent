@@ -383,6 +383,9 @@ define(function(require, exports, module) {
                     size: [undefined, undefined],
                     classes: ['main-topbar-content-logo']
                 });
+                App.Views.MainTopBar.TopLayout.Icon.on('click', function(){
+                    window.open('https://www.loggly.com/blog/topic/general/','_system');
+                });
 
                 App.Views.MainTopBar.TopLayout.Share = new Surface({
                     content: '<div><span>share to win</span> <i class="icon icon1 ion-ios7-arrow-thin-right"></i><i class="icon icon2 ion-android-share"></i></div>',
