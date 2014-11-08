@@ -49,6 +49,7 @@ define(function(require, exports, module) {
         this.params = params;
 
         if(!App.Cache.OptionModal){
+            debugger;
             window.location = '';
             return;
         }

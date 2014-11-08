@@ -756,14 +756,17 @@ define(function(require, exports, module) {
             var initialUrl = false;
             if(window.location.hash.toString() != ''){
                 // Skip goto Home 
-                initialUrl = true;
-                Backbone.history.start();
-                // debugger;
-            } else {
-                Backbone.history.start({silent: true}); 
-                App.history.navigate(''); // should go to a "loading" page while we figure out who is logged in
-                // debugger;
+                initialUrl = window.location.hash.toString();
             }
+            Backbone.history.start({silent: true});
+            Backbone.history.navigate('',{trigger: false, replace: true});
+            App.history.navigate(initialUrl ? initialUrl:''); // should go to a "loading" page while we figure out who is logged in
+            
+            // } else {
+            //     Backbone.history.start({silent: true}); 
+            //     App.history.navigate(''); // should go to a "loading" page while we figure out who is logged in
+            //     // debugger;
+            // }
 
 
             // Test login

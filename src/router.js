@@ -29,14 +29,16 @@ define(function(require, exports, module) {
             routes: {
 
                 '' : function(){
-                    console.info('homeAlso');
-                    if(App.history.data.length == 0){
-                        window.location = window.location.href.split('#')[0];
-                        App.history.navigate(App.Credentials.home_route);
-                    }
+                    // console.info('homeAlso');
+                    // if(App.history.data.length == 0){
+                    //     window.location = window.location.href.split('#')[0];
+                    //     App.history.navigate(App.Credentials.home_route);
+                    // }
                 },
                 'random(:anynumber)' : function(){
                     if(App.history.data.length == 0){
+                        console.log(App.history.data);
+                        debugger;
                         window.location = window.location.href.split('#')[0];
                         // App.history.navigate('dash');
                     }
