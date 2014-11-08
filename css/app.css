@@ -294,7 +294,7 @@
   padding: 8px;
 }
 
-.tip-list-item > div {
+.tip-list-item > div > div.details {
   padding: 8px 10px;
 
   border: 1px solid #eee;
@@ -309,32 +309,36 @@
 }
 
 .tip-list-item .title {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 24px;
+
+  padding-left: 8px;
 
   color: #000;
 }
 
 .tip-list-item .more-info {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
 
-  padding-left: 8px;
+  /*padding-left: 8px;*/
 
-  color: #111;
+  color: black;
 
   word-wrap: break-word;
 }
 
 .tip-list-item .more-info-2 {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
 
-  padding-left: 16px;
+  padding-left: 4px;
 
-  color: #333;
+  color: #444;
 
   word-wrap: break-word;
+
+  padding-bottom: 8px;
 }
 
 
