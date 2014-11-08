@@ -935,9 +935,6 @@ input[type="submit"].form-button-submit-default.cancel-button {
 
   color: white;
   text-align: center;
-  line-height: 48px;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 .outward-button.with-icon i {
@@ -965,8 +962,11 @@ input[type="submit"].form-button-submit-default.cancel-button {
   color: white;
   /*padding: 8px 14px;*/
   padding: 0px 8px;
+  
   font-weight: bold;
+  line-height: 48px;
   font-size: 18px;
+
   text-decoration: none;
   display: inline-block;
 
