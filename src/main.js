@@ -224,7 +224,10 @@ define(function(require, exports, module) {
 
     // Update body stylesheet
     // - remove loading background
-    document.body.setAttribute('style',"");
+    // - waiting for Splash screen to take over for a moment
+    Timer.setTimeout(function(){
+        document.body.setAttribute('style',"");
+    },350);
 
     // Google Analytics Plugin
     Utils.Analytics.init();
@@ -815,9 +818,9 @@ define(function(require, exports, module) {
                 try {
                     App.Functions.action();
 
-                    Timer.setTimeout(function(){
-                        App.Views.SplashLoading.hide();
-                    },3000);
+                    // Timer.setTimeout(function(){
+                    //     App.Views.SplashLoading.hide();
+                    // },3000);
                     
                     if(App.Data.usePg){
                         navigator.splashscreen.hide();

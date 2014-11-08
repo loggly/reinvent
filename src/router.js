@@ -182,28 +182,37 @@ define(function(require, exports, module) {
                     defaultRoute('Feedback', 'Misc/Feedback', arguments);
                 },
 
+
                 'booth/list' : function(){
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('booths', false);
                     defaultRoute('Booth', 'Booth/List', arguments);
+
+                    App.Views.SplashLoading.hide();
                 },
 
                 'party/list' : function(){
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('parties', false);
                     defaultRoute('Party', 'Party/List', arguments);
+
+                    App.Views.SplashLoading.hide();
                 },
 
                 'speaker/list' : function(){
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('speakers', false);
                     defaultRoute('Speaker', 'Speaker/List', arguments);
+
+                    App.Views.SplashLoading.hide();
                 },
 
                 'tips/list' : function(){
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('tips', false);
                     defaultRoute('Tips', 'Tips/List', arguments);
+
+                    App.Views.SplashLoading.hide();
                 },
 
 
