@@ -188,7 +188,9 @@ define(function(require, exports, module) {
                     App.Views.MainFooter.Tabs.select('booths', false);
                     defaultRoute('Booth', 'Booth/List', arguments);
 
-                    App.Views.SplashLoading.hide();
+                    Timer.setTimeout(function(){
+                        App.Views.SplashLoading.hide();
+                    },1500);
                 },
 
                 'party/list' : function(){
@@ -196,7 +198,9 @@ define(function(require, exports, module) {
                     App.Views.MainFooter.Tabs.select('parties', false);
                     defaultRoute('Party', 'Party/List', arguments);
 
-                    App.Views.SplashLoading.hide();
+                    Timer.setTimeout(function(){
+                        App.Views.SplashLoading.hide();
+                    },1500);
                 },
 
                 'speaker/list' : function(){
@@ -212,7 +216,9 @@ define(function(require, exports, module) {
                     App.Views.MainFooter.Tabs.select('tips', false);
                     defaultRoute('Tips', 'Tips/List', arguments);
 
-                    App.Views.SplashLoading.hide();
+                    Timer.setTimeout(function(){
+                        App.Views.SplashLoading.hide();
+                    },1500);
                 },
 
 
