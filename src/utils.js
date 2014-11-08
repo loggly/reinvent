@@ -343,7 +343,8 @@ define(function (require) {
 
                 // default options
                 var opts = {
-                    details: options
+                    details: options,
+                    type: 'static'
                 };
 
                 opts.on_done = function(){

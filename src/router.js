@@ -40,7 +40,7 @@ define(function(require, exports, module) {
                     // if(App.history.isFirst()){
                     if(App.history.data.length == 0 || (App.history.data.length == 1 && App.history.data[0][0].substr(1,6) == 'random')){
                         console.log(App.history.data);
-                        debugger;
+                        // debugger;
                         window.location = window.location.href.split('#')[0];
                         // App.history.navigate('dash');
                     }

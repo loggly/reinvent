@@ -382,12 +382,19 @@ define(function(require, exports, module) {
                 });
 
                 App.Views.MainTopBar.TopLayout.Share = new Surface({
-                    content: '<div><span>share this guide</span> <i class="icon icon1 ion-ios7-arrow-thin-right"></i><i class="icon icon2 ion-android-share"></i></div>',
+                    content: '<div><span>share to win</span> <i class="icon icon1 ion-ios7-arrow-thin-right"></i><i class="icon icon2 ion-android-share"></i></div>',
                     size: [200, undefined],
                     classes: ['main-topbar-content-sharebutton']
                 });
                 App.Views.MainTopBar.TopLayout.Share.on('click', function(){
                     Utils.Popover.Share({
+                        // buttons: [{
+                        //     text: 'tstin',
+                        //     success: function(){
+                        //         Utils.Popover.Alert('View Details at xyz.com');
+                        //     }
+                        // }],
+                        text: 'View the Contest Details<br />at <a href="http://loggly.com/awscontest" target="_system">loggly.com/awscontest</a>',
                         email: {
                             subject: encodeURI('Awesome, here is the subject line'),
                             body: encodeURI('here is the body of the email')

@@ -61,6 +61,8 @@ define(function(require, exports, module) {
 
         // Add to new ".passed" options, separate from this.options.App and other root-level arguments/objects
         this.params.passed = _.extend({
+            text: null, // String
+            buttons: null, // []
             email: null,
             twitter: null,
             facebook: null,
@@ -179,22 +181,21 @@ define(function(require, exports, module) {
         // Text
         // Buttons
 
-        // Text
-
-        this.textView = new View();
-        this.textView.Surface = new Surface({
+        // Share buttons
+        this.shareButtonsView = new View();
+        this.shareButtonsView.Surface = new Surface({
             size: [undefined, true],
             content: template_share(this.params.passed.details),
             wrap: '<div></div>',
             classes: ['modal-option-buttons-text-default']
         });
-        this.textView.add(this.textView.Surface);
-        this.textView.getSize = function(){
-            // console.log(that.textView.Surface._trueSize);
-            return [undefined, that.textView.Surface._trueSize ? that.textView.Surface._trueSize[1] : undefined];
+        this.shareButtonsView.add(this.shareButtonsView.Surface);
+        this.shareButtonsView.getSize = function(){
+            // console.log(that.shareButtonsView.Surface._trueSize);
+            return [undefined, that.shareButtonsView.Surface._trueSize ? that.shareButtonsView.Surface._trueSize[1] : undefined];
         };
-        this.textView.Surface.pipe(that.contentScrollView.SeqLayout);
-        this.textView.Surface.on('click', function(){
+        this.shareButtonsView.Surface.pipe(that.contentScrollView.SeqLayout);
+        this.shareButtonsView.Surface.on('click', function(){
             
             that.closePopover();
             if(that.params.passed.on_done){
@@ -203,7 +204,63 @@ define(function(require, exports, module) {
 
         });
 
-        that.contentScrollView.Views.push(this.textView);
+        that.contentScrollView.Views.push(this.shareButtonsView);
+
+
+        // // Text
+        // if(this.modalOptions.details.text){
+
+        //     this.textView = new View();
+        //     this.textView.Surface = new Surface({
+        //         size: [undefined, true],
+        //         content: this.modalOptions.details.text,
+        //         classes: ['modal-option-buttons-text-default']
+        //     });
+        //     this.textView.add(this.textView.Surface);
+        //     this.textView.getSize = function(){
+        //         return [undefined, that.textView.Surface._trueSize ? that.textView.Surface._trueSize[1] : undefined];
+        //     };
+        //     this.textView.Surface.pipe(that.contentScrollView.SeqLayout);
+        //     this.textView.Surface.on('click', function(){
+        //         // debugger;
+        //         var returnResult = listOption;
+        //         that.closePopover();
+        //         // if(that.params.passed.on_choose){
+        //             // that.params.passed.on_choose(returnResult);
+        //         // }
+        //     });
+        //     that.contentScrollView.Views.push(this.textView);
+
+        // }
+
+        // // Arbitrary buttons
+        // if(this.modalOptions.details.buttons){
+
+        //     _.each(this.modalOptions.details.buttons, function(buttonInfo){
+
+        //         var buttonView = new View(); 
+        //         buttonView.Surface = new Surface({
+        //             size: [undefined, 60],
+        //             content: '<div class="outward-button">' + buttonInfo.text + '</div>',
+        //             classes: ['button-outwards-default']
+        //         });
+        //         buttonView.getSize = function(){
+        //             return [undefined, 60];
+        //         };
+        //         buttonView.add(buttonView.Surface);
+        //         buttonView.Surface.pipe(that.contentScrollView.SeqLayout);
+        //         buttonView.Surface.on('click', function(){
+                    
+        //             that.closePopover();
+        //             if(buttonInfo.success){
+        //                 buttonInfo.success();
+        //             }
+
+        //         });
+        //         that.contentScrollView.Views.push(buttonView.Surface);
+        //     });
+
+        // }
 
     };
 

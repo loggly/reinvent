@@ -95,7 +95,7 @@ define(function(require, exports, module) {
             origin: [0.5, 0.5]
         });
         this.contentScrollView.SizeMod = new StateModifier({
-            size: [window.innerWidth - 80, true]
+            size: [window.innerWidth - 40, true]
         });
         this.contentScrollView.PositionMod = new StateModifier({
             transform: Transform.translate(0, window.innerHeight, 0)
@@ -108,7 +108,7 @@ define(function(require, exports, module) {
         switch(this.modalOptions.type){
             case 'scroll':
                 this.contentScrollView.SeqLayout = new ScrollView(); //App.Defaults.ScrollView);
-                this.contentScrollView.SizeMod.setSize([window.innerWidth - 80, window.innerHeight - 40]);
+                this.contentScrollView.SizeMod.setSize([window.innerWidth - 40, window.innerHeight - 40]);
                 break
             case 'static':
             default:
