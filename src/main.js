@@ -389,22 +389,22 @@ define(function(require, exports, module) {
                 App.Views.MainTopBar.TopLayout.Share.on('click', function(){
                     Utils.Popover.Share({
                         email: {
-                            subject: S('Awesome, here is the subject line'),
-                            body: S('here is the body of the email')
+                            subject: encodeURI('Awesome, here is the subject line'),
+                            body: encodeURI('here is the body of the email')
                         },
                         twitter: {
-                            text: S('check out the guide at http://aws.loggly.com/')
+                            text: encodeURI('check out the guide at http://aws.loggly.com/')
                         },
                         facebook: {
                             link: 'http://aws.loggly.com/'
                         },
                         linkedin: {
-                            title: S('title for linked in'),
-                            summary: S('summary for linked in'),
+                            title: encodeURI('title for linked in'),
+                            summary: encodeURI('summary for linked in'),
                             link: 'http://aws.loggly.com/'
                         },
                         gplus: {
-                            link: S('This link is awesome http://aws.loggly.com/')
+                            link: encodeURI('This link is awesome http://aws.loggly.com/')
                         },
                         reddit: {
                             link: 'http://aws.loggly.com/'
