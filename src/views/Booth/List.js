@@ -128,6 +128,32 @@ define(function(require, exports, module) {
     PageView.prototype.addSurfaces = function(){
         var that = this;
 
+        // Add map link
+        var Map = new Surface({
+            content: '<i class="icon ion-map"></i>&nbsp;&nbsp;&nbsp;View Map',
+            wrap: '<div class="outward-button"></div>',
+            size: [undefined, true],
+            classes: ['button-outwards-default']
+        });
+        Map.on('click', function(){
+            window.open('http://s15.a2zinc.net/clients/T3Expo/AWSreInvent/Public/Eventmap.aspx', '_system');
+        });
+        Map.View = new View();
+        Map.View.getSize = function(){
+            // console.log(Map._trueSize);
+            return [undefined, Map._trueSize ? Map._trueSize[1]:1];
+        };
+        Map.pipe(that.contentView.Scrollview);
+
+        Map.View.add(Map);
+
+        that.contentView.Scrollview.Views.push(Map.View);
+
+        // sort
+        BoothList = _.sortBy(BoothList, function(item){
+            return item.Company.toString().toLowerCase();
+        });
+
         // add each template
         BoothList.forEach(function(boothItem){
             // console.log(boothItem);
