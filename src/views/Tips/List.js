@@ -33,6 +33,9 @@ define(function(require, exports, module) {
     var Credentials         = JSON.parse(require('text!credentials.json'));
     var numeral = require('lib2/numeral.min');
 
+    // Data
+    var TipList         = JSON.parse(require('text!models/data/tip_list.json'));
+
     // // Side menu of options
     // var GameMenuView      = require('views/Game/GameMenu');
 
@@ -40,6 +43,11 @@ define(function(require, exports, module) {
     // var GameModel = require('models/game');
     // var PlayerModel = require('models/player');
     // var MediaModel = require('models/media');
+
+    // Templates
+    var Handlebars          = require('lib2/handlebars-adapter');
+    var tpl_tip      = require('text!./tpl/Tip.html');
+    var template_tip = Handlebars.compile(tpl_tip);
 
     function PageView(params) {
         var that = this;
@@ -51,27 +59,10 @@ define(function(require, exports, module) {
             headerSize: App.Defaults.Header.size,
             footerSize: 60
         });
+
         this.createHeader();
+        this.createContent();
 
-        // temp surface
-        this.contentView = new View();
-        this.contentView.OriginMod = new StateModifier({
-            origin: [0, 0.5],
-            align: [0, 0.5]
-        });
-        this.contentView.Surface = new Surface({
-            content: '<i class="icon ion-ios7-search"></i><div>Coming Soon!</div>',
-            size: [undefined, true],
-            classes: ['explore-surface-temp'],
-            properties: {
-                fontSize: '42px',
-                textAlign: 'center',
-                backgroundColor: "#ffffa1"
-            }
-        });
-        this.contentView.add(new StateModifier({size: [undefined,undefined]})).add(this.contentView.OriginMod).add(this.contentView.Surface);
-
-        this.layout.content.add(Utils.usePlane('content')).add(this.contentView);
         this.add(this.layout);
     }
 
@@ -94,13 +85,13 @@ define(function(require, exports, module) {
         //     App.history.back();//.history.go(-1);
         // });
         this.header.navBar.title.on('click',function(){
-            that.refreshData();
+            // that.refreshData();
         });
         this.header._eventOutput.on('more',function(){
             // if(that.model.get('CarPermission.coowner')){
             //     App.history.navigate('car/permission/' + that.model.get('_id'), {trigger: true});
             // }
-            that.menuToggle();
+            // that.menuToggle();
         });
         this._eventOutput.on('inOutTransition', function(args){
             this.header.inOutTransition.apply(this.header, args);
@@ -115,17 +106,105 @@ define(function(require, exports, module) {
         this.layout.header.add(this.header);
 
     };
+    
+    PageView.prototype.createContent = function(){
+        var that = this;
 
-    PageView.prototype.createBlankFooter = function(){
+        this.contentView = new View();
+        this.contentView.Scrollview = new ScrollView();
+        this.contentView.Scrollview.Views = [];
 
-        this.footer = new View();
-        this.footer.Surface = new Surface({
-            content: '',
-            classes: ['blank-footer'],
-            size: [undefined, undefined]
+        this.addSurfaces();
+
+        this.contentView.Scrollview.sequenceFrom(this.contentView.Scrollview.Views);
+
+        this.contentView.add(this.contentView.Scrollview);
+
+        this.ContentStateModifier = new StateModifier();
+        this.layout.content.add(this.ContentStateModifier).add(Utils.usePlane('content')).add(this.contentView);
+
+    };
+
+    PageView.prototype.addSurfaces = function(){
+        var that = this;
+
+        // add each template
+        var toSkip = 0;
+        TipList.forEach(function(tipItem, i){
+            
+            // collect each of the "blank" ones following
+            if(toSkip){
+                toSkip -= 1;
+                return; // continue
+            }
+
+            // Most likely at a "title" one (left-most column filled in)
+
+            // Blank slots?
+            if(tipItem[0] == ""){
+                console.log('blank every slot?', tipItem);
+                return;
+            }
+
+            if(tipItem[0] == "Outside the Show"){
+
+                var Tip = new Surface({
+                    content: '<div>Outside the Show</div>',
+                    size: [undefined, true],
+                    classes: ['tip-list-item-header']
+                });
+                Tip.View = new View();
+                Tip.View.getSize = function(){
+                    // console.log(Tip._trueSize);
+                    return [undefined, Tip._trueSize ? Tip._trueSize[1]:1];
+                };
+                Tip.pipe(that.contentView.Scrollview);
+
+                Tip.View.add(Tip);
+
+                that.contentView.Scrollview.Views.push(Tip.View);
+
+                return;
+            }
+
+            // Get all "more information" ones (next lines)
+            var moreList = [],
+                tmpContinue = true;
+            TipList.forEach(function(tmpItem, tmpIndex){
+                if(tmpIndex <= i){
+                    return;
+                }
+                if(!tmpContinue){
+                    return;
+                }
+                if(tmpItem[0] != ''){
+                    tmpContinue = false;
+                    return;
+                }
+                toSkip += 1;
+                moreList.push(tmpItem);
+            });
+
+            var Tip = new Surface({
+                content: template_tip({
+                    tip: tipItem,
+                    more: moreList
+                }),
+                size: [undefined, true],
+                classes: ['tip-list-item']
+            });
+            Tip.View = new View();
+            Tip.View.getSize = function(){
+                // console.log(Tip._trueSize);
+                return [undefined, Tip._trueSize ? Tip._trueSize[1]:1];
+            };
+            Tip.pipe(that.contentView.Scrollview);
+
+            Tip.View.add(Tip);
+
+            that.contentView.Scrollview.Views.push(Tip.View);
         });
-        this.footer.add(this.footer.Surface);
-        this.layout.footer.add(this.footer);
+
     };
 
     PageView.prototype.refreshData = function(){
@@ -141,28 +220,6 @@ define(function(require, exports, module) {
             case 'hiding':
 
                 switch(otherViewName){
-                    case 'Fleet':
-
-                        // No animation by default
-                        transitionOptions.outTransform = Transform.identity;
-
-                        // Wait for timeout of delay to hide
-                        Timer.setTimeout(function(){
-
-                            // // Fade header
-                            // that.header.StateModifier.setOpacity(0, transitionOptions.outTransition);
-
-                            // Hide content from a direction
-                            // if(goingBack){
-
-                            // that.ContentStateModifier.setTransform(Transform.translate(0,window.innerHeight,0), transitionOptions.outTransition);
-                            // } else {
-                            //     that.ContentStateModifier.setTransform(Transform.translate(window.innerWidth * -1,0,0), transitionOptions.outTransition);
-                            // }
-
-                        }, delayShowing);
-
-                        break;
 
                     default:
                         // Overwriting and using default identity
@@ -170,11 +227,8 @@ define(function(require, exports, module) {
 
                         Timer.setTimeout(function(){
 
-                            // // Fade header
-                            // that.header.StateModifier.setOpacity(0, transitionOptions.outTransition);
-
-                            // Slide down
-                            // that.ContentStateModifier.setTransform(Transform.translate(0, window.innerHeight,0), transitionOptions.outTransition);
+                            // Bring content back
+                            that.ContentStateModifier.setTransform(Transform.translate(window.innerWidth * (goingBack ? 1.5:-1.5),0,0), transitionOptions.outTransition);
 
                         }, delayShowing);
 
@@ -198,49 +252,18 @@ define(function(require, exports, module) {
                         // // Default header opacity
                         // that.header.StateModifier.setOpacity(0);
 
-                        // // Default position
-                        // if(goingBack){
-                        //     that.ContentStateModifier.setTransform(Transform.translate(window.innerWidth * -1,0,0));
-                        // } else {
-                        //     that.ContentStateModifier.setTransform(Transform.translate(window.innerWidth + 100,0,0));
-                        // }
-                        // that.ContentStateModifier.setTransform(Transform.translate(0, window.innerHeight, 0));
-
-                        // Header
-                        Timer.setTimeout(function(){
-
-                            // // Change header opacity
-                            // that.header.StateModifier.setOpacity(1, transitionOptions.outTransition);
-
-
-                        }, delayShowing);
+                        // Default position
+                        that.ContentStateModifier.setTransform(Transform.translate(window.innerWidth * (goingBack ? 1.5:-1.5), 0, 0));
 
                         // Content
                         // - extra delay
                         Timer.setTimeout(function(){
 
-                            // // Bring content back
-                            // that.ContentStateModifier.setTransform(Transform.translate(0,0,0), transitionOptions.inTransition);
+                            // Bring content back
+                            that.ContentStateModifier.setTransform(Transform.translate(0,0,0), transitionOptions.inTransition);
 
                         }, delayShowing + transitionOptions.outTransition.duration);
 
-                        // //Fade out the header
-                        // // var previousTransform = transitionOptions.outTransform;
-                        // transitionOptions.outTransform = Transform.identity;
-
-                        // // Move the content to the left
-                        // // - not the footer
-                        // // console.log(transitionOptions.outTransform);
-                        // // debugger;
-                        // Timer.setTimeout(function(){
-
-                        //     // Bring map content back
-                        //     that.layout.content.StateModifier.setTransform(Transform.translate(0,0,0), transitionOptions.inTransition);
-
-                        //     // Bring Footer Up
-                        //     that.layout.footer.StateModifier.setTransform(Transform.translate(0,0,0), transitionOptions.outTransition);
-
-                        // }, delayShowing);
 
                         break;
                 }
