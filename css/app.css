@@ -341,6 +341,11 @@
   padding-bottom: 8px;
 }
 
+.tip-list-item .more-info-2:last-child {
+
+  padding-bottom: 0px;
+}
+
 
 /* Payment Sources  - credit card list */
 
