@@ -74,7 +74,7 @@ define(function(require, exports, module) {
         
         // create the header
         this.header = new StandardHeader({
-            content: "Key Sessions",
+            content: "Must-See Sessions",
             classes: ["normal-header","text-center"],
             backClasses: ["normal-header"],
             backContent: false,

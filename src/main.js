@@ -394,27 +394,30 @@ define(function(require, exports, module) {
                         //         Utils.Popover.Alert('View Details at xyz.com');
                         //     }
                         // }],
-                        text: 'View the Contest Details<br />at <a href="http://loggly.com/awscontest" target="_system">loggly.com/awscontest</a>',
+                        text: 'Share and follow Loggly on twitter to enter to win VIP to re:Invent 2015. First 100 get a limited edition shirt!',
                         email: {
-                            subject: encodeURI('Awesome, here is the subject line'),
-                            body: encodeURI('here is the body of the email')
+                            subject: encodeURI('AWS re:Invent Must Have Guide!'),
+                            body: encodeURI("If you're headed to AWS re:Invent, you need this! \r\n" + 
+                            "Use this crowdsourced mobile guide to score killer booth swage and access to after-parties \r\n" +
+                            "http://reinvent.loggly.com \r\n" +
+                            "Bonus: share the guide and follow Loggly on twitter to be entered to win a VIP pass to AWS re:Invent 2015, first 100 get a limited edition shirt from their booth.")
                         },
                         twitter: {
-                            text: encodeURI('check out the guide at http://aws.loggly.com/')
+                            text: encodeURI('Awesome mobile crowdsourced AWS #reInvent guide to score booth swag and after-party access http://reinvent.loggly.com/ via @Loggly')
                         },
                         facebook: {
-                            link: 'http://aws.loggly.com/'
+                            link: 'http://reinvent.loggly.com/'
                         },
                         linkedin: {
-                            title: encodeURI('title for linked in'),
-                            summary: encodeURI('summary for linked in'),
-                            link: 'http://aws.loggly.com/'
+                            title: encodeURI('Crowdsourced guide to AWS re:Invent for the best swag and parties'),
+                            summary: encodeURI('Headed to AWS Re:Invent? Use this mobile crowdsourced guide to score booth swag and after-party access URL via Loggly  Share it to be entered to win a VIP pass to AWS re:Invent 2015.'),
+                            link: 'http://reinvent.loggly.com/'
                         },
                         gplus: {
-                            link: encodeURI('This link is awesome http://aws.loggly.com/')
+                            link: encodeURI('Headed to AWS Re:Invent? Use this mobile crowdsourced guide to score booth swag and after-party access http://reinvent.loggly.com/ via Loggly. Share it to be entered to win a VIP pass to AWS re:Invent 2015.')
                         },
                         reddit: {
-                            link: 'http://aws.loggly.com/'
+                            link: 'Crowdsourced mobile guide to score booth swag and after-party access at AWS re:Invent http://reinvent.loggly.com'
                         },
                     });
                 });
@@ -425,7 +428,7 @@ define(function(require, exports, module) {
 
                 // QuickNoteSurface ("the unofficial...")
                 App.Views.MainTopBar.QuickNoteSurface = new Surface({
-                    content: 'The Unofficial Crowdsourced AWS re:Invent Guide',
+                    content: 'Crowdsourced AWS ReInvent Guide',
                     size: [window.innerWidth, true],
                     classes: ['main-topbar-content-guidetext']
                 });
