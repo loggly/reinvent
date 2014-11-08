@@ -382,7 +382,7 @@ define(function(require, exports, module) {
                 });
 
                 App.Views.MainTopBar.TopLayout.Share = new Surface({
-                    content: 'share this guide <i class="icon icon1 ion-ios7-arrow-thin-right"></i><i class="icon icon2 ion-android-share"></i>',
+                    content: '<div><span>share this guide</span> <i class="icon icon1 ion-ios7-arrow-thin-right"></i><i class="icon icon2 ion-android-share"></i></div>',
                     size: [200, undefined],
                     classes: ['main-topbar-content-sharebutton']
                 });

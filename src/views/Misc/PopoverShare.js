@@ -203,7 +203,6 @@ define(function(require, exports, module) {
 
         });
 
-        console.error(this.params.passed.text);
         that.contentScrollView.Views.push(this.textView);
 
     };

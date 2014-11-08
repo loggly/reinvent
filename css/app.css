@@ -49,6 +49,15 @@
 
 }
 
+.main-topbar-content-sharebutton > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main-topbar-content-sharebutton span {
+
+}
+
 .main-topbar-content-sharebutton i.icon1 {
   font-size: 18px;
   padding: 0 8px;

@@ -357,7 +357,10 @@ define(function (require) {
                 App.Cache.OptionModal = opts;
 
                 // Change history (must)
+                var lastHref = window.location.hash;
+                console.log(lastHref);
                 App.history.navigate('popover/share', {history: false});
+                // App.history.navigate(lastHref, {trigger: false, history: false});
 
                 return def.promise();
             },

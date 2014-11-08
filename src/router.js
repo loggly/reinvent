@@ -36,7 +36,9 @@ define(function(require, exports, module) {
                     // }
                 },
                 'random(:anynumber)' : function(){
-                    if(App.history.data.length == 0){
+                    console.log(App.history.data[0]);
+                    // if(App.history.isFirst()){
+                    if(App.history.data.length == 0 || (App.history.data.length == 1 && App.history.data[0][0].substr(1,6) == 'random')){
                         console.log(App.history.data);
                         debugger;
                         window.location = window.location.href.split('#')[0];

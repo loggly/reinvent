@@ -27,10 +27,13 @@ define(function(require, exports, module) {
 
             opts = opts || {};
 
+            console.log('opts', opts);
             opts = _.defaults(opts, {
                 history: true, // add to history
                 group: null,
-                tag: null
+                tag: null,
+                trigger: true, // trigger a route
+                replace: true // replace the url in the browser
             });
 
             if(back === true){
@@ -121,7 +124,7 @@ define(function(require, exports, module) {
                 ]);
             }
 
-            Backbone.history.navigate(path, {trigger: true, replace: true});
+            Backbone.history.navigate(path, {trigger: opts.trigger, replace: opts.replace});
 
 
         };
