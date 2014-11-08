@@ -112,6 +112,14 @@ define(function(require, exports, module) {
                     defaultRoute('PopoverAlert', 'Misc/PopoverAlert', arguments, {cache: false, popover: true});
                 },
 
+                'popover/share' : function(){
+                    // eh, I should be able to cache this route before login, then destroy after login
+                    // defaultRoute('OptionModal', 'Misc/OptionModal', arguments, {cache: false});
+                    App.Flags.InPopover = true;
+                    App.history.navigate('random' + Utils.randomInt(0,10000), {history: false});
+                    defaultRoute('PopoverShare', 'Misc/PopoverShare', arguments, {cache: false, popover: true});
+                },
+
                 'popover/prompt' : function(){
                     // eh, I should be able to cache this route before login, then destroy after login
                     // defaultRoute('OptionModal', 'Misc/OptionModal', arguments, {cache: false});

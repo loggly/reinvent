@@ -159,6 +159,7 @@ define(function(require, exports, module) {
         this.textView.Surface = new Surface({
             size: [undefined, true],
             content: this.params.passed.text,
+            wrap: '<div></div>',
             classes: ['modal-option-buttons-text-default']
         });
         this.textView.add(this.textView.Surface);
@@ -174,6 +175,8 @@ define(function(require, exports, module) {
             }
 
         });
+
+        console.error(this.params.passed.text);
         that.contentScrollView.Views.push(this.textView);
 
         // Button

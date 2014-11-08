@@ -336,6 +336,31 @@ define(function (require) {
                 // Change history (must)
                 App.history.navigate('popover/colorpicker', {history: false});
             },
+            Share: function(options){
+                // default sharing optoins
+
+                var def = $.Deferred();
+
+                // default options
+                var opts = {
+                    details: options
+                };
+
+                opts.on_done = function(){
+                    def.resolve(true);
+                };
+                opts.on_cancel = function(){
+                    def.resolve(false);
+                };
+
+                // Options and details
+                App.Cache.OptionModal = opts;
+
+                // Change history (must)
+                App.history.navigate('popover/share', {history: false});
+
+                return def.promise();
+            },
         },
 
         Help: function(key){

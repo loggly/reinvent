@@ -386,6 +386,31 @@ define(function(require, exports, module) {
                     size: [200, undefined],
                     classes: ['main-topbar-content-sharebutton']
                 });
+                App.Views.MainTopBar.TopLayout.Share.on('click', function(){
+                    Utils.Popover.Share({
+                        email: {
+                            subject: S('Awesome, here is the subject line'),
+                            body: S('here is the body of the email')
+                        },
+                        twitter: {
+                            text: S('check out the guide at http://aws.loggly.com/')
+                        },
+                        facebook: {
+                            link: 'http://aws.loggly.com/'
+                        },
+                        linkedin: {
+                            title: S('title for linked in'),
+                            summary: S('summary for linked in'),
+                            link: 'http://aws.loggly.com/'
+                        },
+                        gplus: {
+                            link: S('This link is awesome http://aws.loggly.com/')
+                        },
+                        reddit: {
+                            link: 'http://aws.loggly.com/'
+                        },
+                    });
+                });
 
                 App.Views.MainTopBar.TopLayout.Views.push(App.Views.MainTopBar.TopLayout.Icon);
                 App.Views.MainTopBar.TopLayout.Views.push(App.Views.MainTopBar.TopLayout.Share);
