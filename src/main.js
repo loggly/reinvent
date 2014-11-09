@@ -920,8 +920,9 @@ define(function(require, exports, module) {
                 console.error(err);
 
                 // Navigate to Logout
-                App.history.navigate('logout/force');
-                debugger;
+                // App.history.navigate('logout/force');
+                App.history.navigate(App.Credentials.home_route);
+                // debugger;
                 // return;
 
                 // alert('Unable to log in');
