@@ -21,6 +21,12 @@ define(function(require, exports, module) {
         // Preload the necessary models by fetching from the server
         console.info('preloading models');
 
+        // Load JSON data
+        var BoothList         = JSON.parse(require('text!models/data/booth_list.json'));
+        var PartyList         = JSON.parse(require('text!models/data/party_list.json'));
+        var SpeakerList         = JSON.parse(require('text!models/data/speaker_list.json'));
+        var TipsList         = JSON.parse(require('text!models/data/tip_list.json'));
+
         // App.Data.UserFriends = new FriendModel.FriendCollection([],{
         //     type: 'friend'
         // });
@@ -39,7 +45,7 @@ define(function(require, exports, module) {
 
         // Collections and Models preloading
 
-        
+
         return;
 
         if(App.Data.User.get('_id')){

@@ -117,7 +117,7 @@ define(function(require, exports, module) {
 
         // Sign Up button
         this.signupButton = new Surface({
-            content: '<div>AngelList Login</div>',
+            content: '<div>Login</div>',
             size: [window.innerWidth, 60],
             classes: ['landing-signup-button']
         });
@@ -211,7 +211,7 @@ define(function(require, exports, module) {
             classes: ['landing-title-bg-gradient']
         });
         this.landingTitle.Surface = new Surface({
-            content: '<div>DEMO DAY</div>',
+            content: '<div>BIG TITLE</div>',
             size: [undefined, 200],
             classes: ['landing-page-logo-tagline']
         });

@@ -74,7 +74,7 @@ define(function(require, exports, module) {
         
         // create the header
         this.header = new StandardHeader({
-            content: "After Parties",
+            content: "The Best After-Parties",
             classes: ["normal-header","text-center"],
             backClasses: ["normal-header"],
             backContent: false,
@@ -128,6 +128,13 @@ define(function(require, exports, module) {
     PageView.prototype.addSurfaces = function(){
         var that = this;
 
+        // this.createMapButton();
+
+        // sort
+        PartyList = _.sortBy(PartyList, function(item){
+            return item.Event.toString().toLowerCase();
+        });
+
         // add each template
         PartyList.forEach(function(partyItem){
             // console.log(partyItem);
@@ -149,6 +156,32 @@ define(function(require, exports, module) {
 
         });
 
+    };
+
+    PageView.prototype.createMapButton = function(){
+        var that = this;
+        
+        // Add map link
+        var Map = new Surface({
+            content: '<i class="icon ion-document-text"></i>&nbsp;&nbsp;&nbsp; View Party PDF',
+            wrap: '<div class="outward-button"></div>',
+            size: [undefined, true],
+            classes: ['button-outwards-default']
+        });
+        Map.on('click', function(){
+            // window.open('http://s15.a2zinc.net/clients/T3Expo/AWSreInvent/Public/Eventmap.aspx', '_system');
+            window.open('https://reinvent.awsevents.com/files/reInvent-Maps.pdf', '_system');
+        });
+        Map.View = new View();
+        Map.View.getSize = function(){
+            // console.log(Map._trueSize);
+            return [undefined, Map._trueSize ? Map._trueSize[1]:1];
+        };
+        Map.pipe(that.contentView.Scrollview);
+
+        Map.View.add(Map);
+
+        that.contentView.Scrollview.Views.push(Map.View);
     };
 
     PageView.prototype.refreshData = function(){

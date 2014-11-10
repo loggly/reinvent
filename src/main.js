@@ -224,7 +224,11 @@ define(function(require, exports, module) {
 
     // Update body stylesheet
     // - remove loading background
-    document.body.setAttribute('style',"");
+    // - waiting for Splash screen to take over for a moment
+    Timer.setTimeout(function(){
+        document.body.setAttribute('style',"");
+        $('.before-loaded-screen').remove();
+    },350);
 
     // Google Analytics Plugin
     Utils.Analytics.init();
@@ -380,6 +384,9 @@ define(function(require, exports, module) {
                     size: [undefined, undefined],
                     classes: ['main-topbar-content-logo']
                 });
+                App.Views.MainTopBar.TopLayout.Icon.on('click', function(){
+                    window.open('https://www.loggly.com/blog/unofficial-official-aws-reinvent-guide/','_system');
+                });
 
                 App.Views.MainTopBar.TopLayout.Share = new Surface({
                     content: '<div><span>share to win</span> <i class="icon icon1 ion-ios7-arrow-thin-right"></i><i class="icon icon2 ion-android-share"></i></div>',
@@ -394,27 +401,31 @@ define(function(require, exports, module) {
                         //         Utils.Popover.Alert('View Details at xyz.com');
                         //     }
                         // }],
-                        text: 'View the Contest Details<br />at <a href="http://loggly.com/awscontest" target="_system">loggly.com/awscontest</a>',
+                        text: 'Share the guide and follow @Loggly on twitter to enter to win VIP to re:Invent 2015. First 100 get a limited edition shirt!',
                         email: {
-                            subject: encodeURI('Awesome, here is the subject line'),
-                            body: encodeURI('here is the body of the email')
+                            subject: 'AWS re:Invent Must Have Guide!',
+
+                            body: "If you're headed to AWS re:Invent, you need this! %0D%0A" + 
+                            "Use this crowdsourced mobile guide to score killer booth swag and access to after-parties %0D%0A%0D%0A" +
+                            "http://loggly.com/reinvent %0D%0A%0D%0A" +
+                            "Bonus: share the guide and follow Loggly on twitter to be entered to win a VIP pass to AWS re:Invent 2015, first 100 get a limited edition shirt from their booth."
                         },
                         twitter: {
-                            text: encodeURI('check out the guide at http://aws.loggly.com/')
+                            text: encodeURI('Awesome mobile crowdsourced AWS #reInvent guide to score booth swag and after-party access http://loggly.com/reinvent via @Loggly').replace(/\#/g, "%23")
                         },
                         facebook: {
-                            link: 'http://aws.loggly.com/'
+                            link: 'http://loggly.com/reinvent'
                         },
                         linkedin: {
-                            title: encodeURI('title for linked in'),
-                            summary: encodeURI('summary for linked in'),
-                            link: 'http://aws.loggly.com/'
+                            title: encodeURI('Headed to AWS Re:Invent? '),
+                            summary: encodeURI('Use this mobile crowdsourced guide to score booth swag and after-party access http://loggly.com/reinvent via Loggly  Share it to be entered to win a VIP pass to AWS re:Invent 2015.'),
+                            link: 'http://loggly.com/reinvent'
                         },
                         gplus: {
-                            link: encodeURI('This link is awesome http://aws.loggly.com/')
+                            link: encodeURI('Headed to AWS Re:Invent? Use this mobile crowdsourced guide to score booth swag and after-party access http://loggly.com/reinvent via Loggly Share it to be entered to win a VIP pass to AWS re:Invent 2015.')
                         },
                         reddit: {
-                            link: 'http://aws.loggly.com/'
+                            link: 'AWS re:Invent crowdsourced mobile guide to score booth swag and after-party access http://loggly.com/reinvent'
                         },
                     });
                 });
@@ -425,7 +436,7 @@ define(function(require, exports, module) {
 
                 // QuickNoteSurface ("the unofficial...")
                 App.Views.MainTopBar.QuickNoteSurface = new Surface({
-                    content: 'The Unofficial Crowdsourced AWS re:Invent Guide',
+                    content: 'Crowdsourced AWS ReInvent Guide',
                     size: [window.innerWidth, true],
                     classes: ['main-topbar-content-guidetext']
                 });
@@ -618,16 +629,16 @@ define(function(require, exports, module) {
                 // spinning logo
 
                 // 0 - innermost
-                App.Views.SplashLoading.Logo = new ImageSurface({
+                App.Views.SplashLoading.Logo = new Surface({
                     // content: 'OddJob',
-                    content: 'img/loggly_logo_white_on_brown.png',
+                    content: '<img src="img/loggly_logo_white_on_brown.png" /><div><div class="title">Crowdsourced AWS ReInvent Guide:</div><div class="subtitle">Booth Swag, After-Parties and Key Sessions</div></div>',
                     classes: ['splash-surface-default'],
                     properties: {
                         // 'backface-visibility' : 'visible'
                     },
                     // content: 'https://dl.dropboxusercontent.com/u/6673634/wehicle_square.svg',
                     // size: [window.innerWidth, 70]
-                    size: [250, 130]
+                    size: [300, 180] // 130img + 30px text
                 });
                 App.Views.SplashLoading.Logo.useOpacity = 0;
                 var splashOpacity = 0;
@@ -812,9 +823,9 @@ define(function(require, exports, module) {
                 try {
                     App.Functions.action();
 
-                    Timer.setTimeout(function(){
-                        App.Views.SplashLoading.hide();
-                    },3000);
+                    // Timer.setTimeout(function(){
+                    //     App.Views.SplashLoading.hide();
+                    // },3000);
                     
                     if(App.Data.usePg){
                         navigator.splashscreen.hide();
@@ -911,8 +922,9 @@ define(function(require, exports, module) {
                 console.error(err);
 
                 // Navigate to Logout
-                App.history.navigate('logout/force');
-                debugger;
+                // App.history.navigate('logout/force');
+                App.history.navigate(App.Credentials.home_route);
+                // debugger;
                 // return;
 
                 // alert('Unable to log in');

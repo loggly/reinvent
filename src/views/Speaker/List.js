@@ -74,7 +74,7 @@ define(function(require, exports, module) {
         
         // create the header
         this.header = new StandardHeader({
-            content: "Key Sessions",
+            content: "Must-See Sessions",
             classes: ["normal-header","text-center"],
             backClasses: ["normal-header"],
             backContent: false,
@@ -127,6 +127,11 @@ define(function(require, exports, module) {
 
     PageView.prototype.addSurfaces = function(){
         var that = this;
+
+        // sort
+        SpeakerList = _.sortBy(SpeakerList, function(item){
+            return item.Session.toString().toLowerCase();
+        });
 
         // add each template
         SpeakerList.forEach(function(speakerItem){

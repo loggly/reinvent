@@ -74,7 +74,7 @@ define(function(require, exports, module) {
         
         // create the header
         this.header = new StandardHeader({
-            content: "Booth Swag",
+            content: " Find Killer Booth Swag",
             classes: ["normal-header","text-center"],
             backClasses: ["normal-header"],
             backContent: false,
@@ -128,26 +128,7 @@ define(function(require, exports, module) {
     PageView.prototype.addSurfaces = function(){
         var that = this;
 
-        // Add map link
-        var Map = new Surface({
-            content: '<i class="icon ion-map"></i>&nbsp;&nbsp;&nbsp;View Map',
-            wrap: '<div class="outward-button"></div>',
-            size: [undefined, true],
-            classes: ['button-outwards-default']
-        });
-        Map.on('click', function(){
-            window.open('http://s15.a2zinc.net/clients/T3Expo/AWSreInvent/Public/Eventmap.aspx', '_system');
-        });
-        Map.View = new View();
-        Map.View.getSize = function(){
-            // console.log(Map._trueSize);
-            return [undefined, Map._trueSize ? Map._trueSize[1]:1];
-        };
-        Map.pipe(that.contentView.Scrollview);
-
-        Map.View.add(Map);
-
-        that.contentView.Scrollview.Views.push(Map.View);
+        this.createMapButton();
 
         // sort
         BoothList = _.sortBy(BoothList, function(item){
@@ -174,6 +155,32 @@ define(function(require, exports, module) {
             that.contentView.Scrollview.Views.push(Booth.View);
         });
 
+    };
+
+    PageView.prototype.createMapButton = function(){
+        var that = this;
+        
+        // Add map link
+        var Map = new Surface({
+            content: '<i class="icon ion-map"></i>&nbsp;&nbsp;&nbsp; View Map PDF',
+            wrap: '<div class="outward-button"></div>',
+            size: [undefined, true],
+            classes: ['button-outwards-default']
+        });
+        Map.on('click', function(){
+            // window.open('http://s15.a2zinc.net/clients/T3Expo/AWSreInvent/Public/Eventmap.aspx', '_system');
+            window.open('https://reinvent.awsevents.com/files/reInvent-Maps.pdf', '_system');
+        });
+        Map.View = new View();
+        Map.View.getSize = function(){
+            // console.log(Map._trueSize);
+            return [undefined, Map._trueSize ? Map._trueSize[1]:1];
+        };
+        Map.pipe(that.contentView.Scrollview);
+
+        Map.View.add(Map);
+
+        that.contentView.Scrollview.Views.push(Map.View);
     };
 
     PageView.prototype.refreshData = function(){

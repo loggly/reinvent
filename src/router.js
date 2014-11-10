@@ -182,28 +182,59 @@ define(function(require, exports, module) {
                     defaultRoute('Feedback', 'Misc/Feedback', arguments);
                 },
 
+
                 'booth/list' : function(){
+
+                    document.title = 'Crowdsourced AWS ReInvent Guide: Find Killer Booth Swag';
+
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('booths', false);
                     defaultRoute('Booth', 'Booth/List', arguments);
+
+                    Timer.setTimeout(function(){
+                        App.Views.SplashLoading.hide();
+                    },2000);
                 },
 
                 'party/list' : function(){
+
+                    document.title = 'Crowdsourced AWS ReInvent Guide: Find the Best After-Parties';
+
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('parties', false);
                     defaultRoute('Party', 'Party/List', arguments);
+
+                    Timer.setTimeout(function(){
+                        App.Views.SplashLoading.hide();
+                    },2000);
                 },
 
                 'speaker/list' : function(){
+
+                    document.title = 'Crowdsourced AWS ReInvent Guide: Must See Sessions';
+
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('speakers', false);
                     defaultRoute('Speaker', 'Speaker/List', arguments);
+
+                    App.Views.SplashLoading.hide();
+
+                    Timer.setTimeout(function(){
+                        App.Views.SplashLoading.hide();
+                    },2000);
                 },
 
                 'tips/list' : function(){
+
+                    document.title = 'Crowdsourced AWS ReInvent Guide: Vegas Tips';
+                    
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('tips', false);
                     defaultRoute('Tips', 'Tips/List', arguments);
+
+                    Timer.setTimeout(function(){
+                        App.Views.SplashLoading.hide();
+                    },2000);
                 },
 
 
