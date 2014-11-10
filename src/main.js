@@ -227,6 +227,7 @@ define(function(require, exports, module) {
     // - waiting for Splash screen to take over for a moment
     Timer.setTimeout(function(){
         document.body.setAttribute('style',"");
+        $('.before-loaded-screen').remove();
     },350);
 
     // Google Analytics Plugin

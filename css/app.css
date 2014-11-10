@@ -93,6 +93,53 @@
 }
 
 
+
+/* Before loaded (device not yet ready, famous not loaded) screen */
+
+
+.before-loaded-screen {
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+/*
+  display: table-cell;
+  vertical-align: middle;*/
+  
+  /*font-weight: bold;*/
+  font-family: Helvetica, Arial, sans-serif;
+
+  line-height: 20px;
+  font-size: 14px;
+
+  color: rgba(255,255,255,0.8);
+
+  text-align: center;
+}
+
+.before-loaded-screen img {
+  width: 100%;
+}
+
+.before-loaded-screen div.title {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.before-loaded-screen div.subtitle {
+  padding-top: 8px;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.before-loaded-screen div.is-loading {
+  padding-top: 8px;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+
 /* Splash Screen */
 
 .splash-background-default {
@@ -126,6 +173,7 @@
   line-height: 18px;
   font-size: 14px;
 }
+
 
 
 
