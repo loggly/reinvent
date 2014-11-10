@@ -411,7 +411,7 @@ define(function(require, exports, module) {
                             "Bonus: share the guide and follow Loggly on twitter to be entered to win a VIP pass to AWS re:Invent 2015, first 100 get a limited edition shirt from their booth.")
                         },
                         twitter: {
-                            text: encodeURI('Awesome mobile crowdsourced AWS #reInvent guide to score booth swag and after-party access http://loggly.com/reinvent via @Loggly')
+                            text: encodeURI('Awesome mobile crowdsourced AWS #reInvent guide to score booth swag and after-party access http://loggly.com/reinvent via @Loggly').replace(/\#/g, "%23")
                         },
                         facebook: {
                             link: 'http://loggly.com/reinvent'
