@@ -403,8 +403,9 @@ define(function(require, exports, module) {
                         // }],
                         text: 'Share the guide and follow @Loggly on twitter to enter to win VIP to re:Invent 2015. First 100 get a limited edition shirt!',
                         email: {
+                            // subject: 'bullshit this works',
+                            // body: 'tsting this again',
                             subject: encodeURI('AWS re:Invent Must Have Guide!'),
-
                             body: encodeURI("If you're headed to AWS re:Invent, you need this! \r\n" + 
                             "Use this crowdsourced mobile guide to score killer booth swag and access to after-parties \r\n\r\n" +
                             "http://loggly.com/reinvent \r\n\r\n" +
