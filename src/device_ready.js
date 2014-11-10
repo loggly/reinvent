@@ -214,6 +214,11 @@ define(function(require, exports, module) {
                 this.initPush();
             }
 
+            // Window resize (browser, or orientation change)
+            window.onresize = function(){
+                App.mainSize = [window.innerWidth, window.innerHeight];
+                App.Events.emit('resize');
+            };
 
             // Keyboard
             // - requires ionic keyboard plugin

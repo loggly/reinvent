@@ -128,7 +128,7 @@ define(function(require, exports, module) {
     PageView.prototype.addSurfaces = function(){
         var that = this;
 
-        this.createMapButton();
+        // this.createMapButton();
 
         // sort
         PartyList = _.sortBy(PartyList, function(item){

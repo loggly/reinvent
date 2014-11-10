@@ -190,7 +190,7 @@ define(function(require, exports, module) {
 
                     Timer.setTimeout(function(){
                         App.Views.SplashLoading.hide();
-                    },1500);
+                    },2000);
                 },
 
                 'party/list' : function(){
@@ -200,7 +200,7 @@ define(function(require, exports, module) {
 
                     Timer.setTimeout(function(){
                         App.Views.SplashLoading.hide();
-                    },1500);
+                    },2000);
                 },
 
                 'speaker/list' : function(){
@@ -209,6 +209,10 @@ define(function(require, exports, module) {
                     defaultRoute('Speaker', 'Speaker/List', arguments);
 
                     App.Views.SplashLoading.hide();
+
+                    Timer.setTimeout(function(){
+                        App.Views.SplashLoading.hide();
+                    },2000);
                 },
 
                 'tips/list' : function(){
@@ -218,7 +222,7 @@ define(function(require, exports, module) {
 
                     Timer.setTimeout(function(){
                         App.Views.SplashLoading.hide();
-                    },1500);
+                    },2000);
                 },
 
 

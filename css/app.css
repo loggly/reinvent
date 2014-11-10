@@ -100,15 +100,31 @@
 }
 
 .splash-surface-default {
-  font-size: 36px;
-  font-weight: bold;
+  
+  /*font-weight: bold;*/
   font-family: Helvetica, Arial, sans-serif;
 
-  line-height: 70px;
+  line-height: 20px;
+  font-size: 14px;
 
-  color: black;
+  color: rgba(255,255,255,0.8);
 
   text-align: center;
+}
+
+.splash-surface-default img {
+  width: 100%;
+}
+
+.splash-surface-default div.title {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.splash-surface-default div.subtitle {
+  padding-top: 8px;
+  line-height: 18px;
+  font-size: 14px;
 }
 
 
