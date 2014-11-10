@@ -403,13 +403,17 @@ define(function(require, exports, module) {
                         // }],
                         text: 'Share the guide and follow @Loggly on twitter to enter to win VIP to re:Invent 2015. First 100 get a limited edition shirt!',
                         email: {
-                            subject: 'AWS re:Invent Must Have Guide!',
+                            subject: encodeURI('AWS re:Invent Must Have Guide!'),
 
-                            body: "If you're headed to AWS re:Invent, you need this! %0D%0A" + 
-                            "Use this crowdsourced mobile guide to score killer booth swag and access to after-parties %0D%0A%0D%0A" +
-                            "http://loggly.com/reinvent %0D%0A%0D%0A" +
-                            "Bonus: share the guide and follow Loggly on twitter to be entered to win a VIP pass to AWS re:Invent 2015, first 100 get a limited edition shirt from their booth."
+                            body: encodeURI("If you're headed to AWS re:Invent, you need this! \r\n" + 
+                            "Use this crowdsourced mobile guide to score killer booth swag and access to after-parties \r\n\r\n" +
+                            "http://loggly.com/reinvent \r\n\r\n" +
+                            "Bonus: share the guide and follow Loggly on twitter to be entered to win a VIP pass to AWS re:Invent 2015, first 100 get a limited edition shirt from their booth.")
                         },
+                        // email_gmail: {
+                        //     subject: 'AWS Crowdsourced guide!',
+                        //     body: 'http://loggly.com/reinvent'
+                        // },
                         twitter: {
                             text: encodeURI('Awesome mobile crowdsourced AWS #reInvent guide to score booth swag and after-party access http://loggly.com/reinvent via @Loggly').replace(/\#/g, "%23")
                         },
