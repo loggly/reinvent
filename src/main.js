@@ -356,6 +356,9 @@ define(function(require, exports, module) {
             // Main Header/Topbar (for sharing)
             var createMainTopbar = function(){
 
+                // Require the PopoverShare for later
+                require('views/Misc/PopoverShare');
+
                 App.Views.MainTopBar = new View();
 
                 App.Views.MainTopBar.Bg = new Surface({
