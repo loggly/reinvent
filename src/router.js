@@ -45,6 +45,9 @@ define(function(require, exports, module) {
                         // App.history.navigate('dash');
                     }
                 },
+                'nolink' : function(){
+                    Utils.Popover.Alert('No link for this one!','OK');
+                },
 
                 'logout(/:force)' : function(){
                     
@@ -227,7 +230,7 @@ define(function(require, exports, module) {
                 'tips/list' : function(){
 
                     document.title = 'Crowdsourced AWS ReInvent Guide: Vegas Tips';
-                    
+
                     App.Views.MainFooter.route_show = true;
                     App.Views.MainFooter.Tabs.select('tips', false);
                     defaultRoute('Tips', 'Tips/List', arguments);
