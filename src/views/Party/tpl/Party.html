@@ -1,6 +1,10 @@
 <div>
     <div class="name">
-        <a href="{{Link}}" target="_system">{{Event}}</a>
+        {{#if Link}}
+            <a href="{{Link}}" target="_system">{{Event}}</a>
+        {{else}}
+            {{Event}}
+        {{/if}}
     </div>
     <div class="">
          <span class="starttime">{{Moment When "ddd h:mma"}}</span>
