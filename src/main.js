@@ -98,8 +98,8 @@ require.config({
         //             "src/lib/requestAnimationFrame.js",
     },
 
-    urlArgs: new Date().toString(),
-    // urlArgs: 'v1.8'
+    // urlArgs: new Date().toString(),
+    urlArgs: 'v1.9'
 
 });
 
