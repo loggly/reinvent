@@ -1,107 +1,107 @@
 [
   {
-    "Company":"Loggly",
-    "Session":"Amazon Route 53 Deep Dive: Delivering Resiliency, Minimizing Latency",
-    "Day":"Wednesday",
-    "Time":"TBD",
-    "Level":"Expert"
-  },
-  {
-    "Company":"Looker",
-    "Session":"Modern BI @ AWS Marketplace",
-    "Day":"Thursday",
-    "Time":"5:15 PM",
-    "Level":"Introductory"
-  },
-  {
-    "Company":"Datadog",
-    "Session":"APP309 - Running & Monitoring Docker Containers at Scale",
-    "Day":"Wednesday",
-    "Time":"4:30 PM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"RightScale",
-    "Session":"AWS & VMware: How to Architect & Manage Hybrid Environments",
-    "Day":"Thursday",
-    "Time":"3:15 PM",
-    "Level":"Expert"
-  },
-  {
-    "Company":"Cycle Computing",
-    "Session":"HPC on AWS: Results from the Record-breaking 156,000 Core MegaRun, and Insights to On-demand Clusters for Manufacturing Production Workloads",
-    "Day":"Friday",
-    "Time":"10:00 AM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Docker",
-    "Session":"APP303 - Lightning Fast Deploys with Docker Containers and AWS",
-    "Day":"Thursday",
-    "Time":"2:15 PM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Yamaha & 2nd Watch",
-    "Session":"Yamaha Corporation: Migrating Business Applications to AWS ",
-    "Day":"Thursday",
-    "Time":"2:15 PM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Ping Identity",
-    "Session":"Integrating AWS with External Identity Management",
-    "Day":"Thursday",
-    "Time":"4:30 PM",
-    "Level":"Advanced"
-  },
-  {
     "Company":"Infor",
     "Session":"ENT202 - Four Keys to Move Your Core Business Applications to the Cloud",
-    "Day":"Wednesday",
-    "Time":"11:00 AM",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10644",
+    "When":"11/12 11:00",
     "Level":"All Levels"
   },
   {
-    "Company":"PagerDuty",
-    "Session":"CTO-to-CTO Fireside Chat with Dr. Werner Vogels",
-    "Day":"Thursday",
-    "Time":"2:00 PM",
+    "Company":"Dome9",
+    "Session":"Deep Dive Demo on AWS Security (@booth 1036)",
+    "Link":"",
+    "When":"11/12 13:00",
     "Level":"All Levels"
   },
   {
-    "Company":"Socialmetrix",
-    "Session":"ARC202 - Real-World Real-Time Analytics",
-    "Day":"Thursday",
-    "Time":"5:30 PM",
-    "Level":"All Levels"
+    "Company":"Loggly",
+    "Session":"SDD408 - Amazon Route 53 Deep Dive: Delivering Resiliency, Minimizing Latency",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=8992&tclass=popup",
+    "When":"11/12 13:15",
+    "Level":"Expert"
   },
   {
     "Company":"Cloudability",
     "Session":"ENT207 - Creating a Culture of Cost Management in Your Organization",
-    "Day":"Wednesday",
-    "Time":"2:15 PM",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10848",
+    "When":"11/12 14:15",
+    "Level":"Advanced"
+  },
+  {
+    "Company":"Datadog",
+    "Session":"APP309 - Running & Monitoring Docker Containers at Scale",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10584",
+    "When":"11/12 16:30",
     "Level":"Advanced"
   },
   {
     "Company":"Cloudability",
     "Session":"ENT203 - Iterating Your Way To 95% Reserved Instance Usage",
-    "Day":"Wednesday",
-    "Time":"4:30 PM",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10846",
+    "When":"11/12 16:30",
     "Level":"Advanced"
+  },
+  {
+    "Company":"PagerDuty",
+    "Session":"CTO-to-CTO Fireside Chat with Dr. Werner Vogels",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=miklas&searchType=speaker&tc=0&sortBy=",
+    "When":"11/13 14:00",
+    "Level":"All Levels"
   },
   {
     "Company":"Cloudnexa & Clear ",
     "Session":"What do Airports & Sports Stadiums Have in Common? Managed Cloud Solutions Underpin Fast Secure Entry",
-    "Day":"Thursday",
-    "Time":"2:00 PM",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10904",
+    "When":"11/13 14:00",
     "Level":"Introductory"
   },
   {
-    "Company":"Dome9",
-    "Session":"Deep Dive Demo on AWS Security (@booth 1036)",
-    "Day":"Wednesday",
-    "Time":"1:00 PM",
+    "Company":"Docker",
+    "Session":"APP303 - Lightning Fast Deploys with Docker Containers and AWS",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=8977",
+    "When":"11/13 14:15",
+    "Level":"Advanced"
+  },
+  {
+    "Company":"Yamaha & 2nd Watch",
+    "Session":"Yamaha Corporation: Migrating Business Applications to AWS ",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=11284",
+    "When":"11/13 14:15",
+    "Level":"Advanced"
+  },
+  {
+    "Company":"RightScale",
+    "Session":"AWS & VMware: How to Architect & Manage Hybrid Environments",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10966",
+    "When":"11/13 15:15",
+    "Level":"Expert"
+  },
+  {
+    "Company":"Ping Identity",
+    "Session":"Integrating AWS with External Identity Management",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=9439",
+    "When":"11/13 16:30",
+    "Level":"Advanced"
+  },
+  {
+    "Company":"Looker",
+    "Session":"Modern BI @ AWS Marketplace",
+    "Link":"",
+    "When":"11/13 17:15",
+    "Level":"Introductory"
+  },
+  {
+    "Company":"Socialmetrix",
+    "Session":"ARC202 - Real-World Real-Time Analytics",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=8813",
+    "When":"11/13 17:30",
     "Level":"All Levels"
+  },
+  {
+    "Company":"Cycle Computing",
+    "Session":"HPC on AWS: Results from the Record-breaking 156,000 Core MegaRun, and Insights to On-demand Clusters for Manufacturing Production Workloads",
+    "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=9885",
+    "When":"11/14 10:00",
+    "Level":"Advanced"
   }
 ]
