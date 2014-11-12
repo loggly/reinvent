@@ -157,7 +157,7 @@
   {
     "Company":"PagerDuty",
     "Booth":948,
-    "Giveaway":"MacBook Air, GoPro, Uber Gift Card, Pebble Steel Watch"
+    "Giveaway":"Giving away a MacBook Air and a GoPro"
   },
   {
     "Company":"ElasticBox",
@@ -243,5 +243,115 @@
     "Company":"Orchestrate",
     "Booth":1432,
     "Giveaway":"The only all-in-one database service is giving away a Pinoccio (pinnocc.io) board. Come by the booth and pick up a pair of sunglasses, shirts, stickers, and enter to win. "
+  },
+  {
+    "Company":"Global Knowledge",
+    "Booth":1045,
+    "Giveaway":"Giving away a voice-activated R2D2 and t-shirt."
+  },
+  {
+    "Company":"Gravitant",
+    "Booth":633,
+    "Giveaway":"We'll be giving away Google Chromecasts, plenty of candy, and a Kindle Fire tablet too."
+  },
+  {
+    "Company":"Cazena",
+    "Booth":1035,
+    "Giveaway":"Cotton Candy"
+  },
+  {
+    "Company":"Palerra",
+    "Booth":1130,
+    "Giveaway":"Hourly giveaways of Beats Headphone or GoPro Hero 3+"
+  },
+  {
+    "Company":"Accenture",
+    "Booth":425,
+    "Giveaway":"F1 fan? Come test drive your agility in an awesome simulator."
+  },
+  {
+    "Company":"CoreSite",
+    "Booth":512,
+    "Giveaway":"Booth visitors will receive a free usb connector!"
+  },
+  {
+    "Company":"Calm.io",
+    "Booth":1342,
+    "Giveaway":"Look out for our awesome 'Stay Calm.io' t-shirts, 6000 mAh battery banks, pens and other stuff!"
+  },
+  {
+    "Company":"Atlassian",
+    "Booth":556,
+    "Giveaway":"t-shirts"
+  },
+  {
+    "Company":"NuoDB",
+    "Booth":551,
+    "Giveaway":"shirts and notebooks"
+  },
+  {
+    "Company":"CloudEndure",
+    "Booth":548,
+    "Giveaway":"remote helicopters"
+  },
+  {
+    "Company":"MindPoint",
+    "Booth":649,
+    "Giveaway":"t-shirts and pens"
+  },
+  {
+    "Company":"Safenet",
+    "Booth":644,
+    "Giveaway":"parrot ar drone 2.0"
+  },
+  {
+    "Company":"Zayo",
+    "Booth":643,
+    "Giveaway":"Amazon fire tv, t-shirts, remote controlled helipcopters"
+  },
+  {
+    "Company":"Softnas",
+    "Booth":638,
+    "Giveaway":"spin the wheel to win a daily prize"
+  },
+  {
+    "Company":"Tibco Jaspersoft",
+    "Booth":539,
+    "Giveaway":"t-shirts \"what happens in the cloud stays in the cloud\""
+  },
+  {
+    "Company":"AppZero",
+    "Booth":533,
+    "Giveaway":"win an ipad for taking a survey"
+  },
+  {
+    "Company":"Gravitant",
+    "Booth":633,
+    "Giveaway":"candy, pens, usb sticks"
+  },
+  {
+    "Company":"Cloudamize",
+    "Booth":630,
+    "Giveaway":"tweet a picture of the booth and you could win an iPad mini 3"
+  },
+  {
+    "Company":"Trend micro",
+    "Booth":625,
+    "Giveaway":"t-shirts, tote bags. Enter to win a $500 Amazon gift card"
+  },
+  {
+    "Company":"Citrix",
+    "Booth":415,
+    "Giveaway":"Scan your badge to be entered to win a 13.3 MacBook Air"
+  },
+  {
+    "Company":"Chef",
+    "Booth":506,
+    "Giveaway":"water bottles"
+  },
+  {
+    "Company":"Attunity",
+    "Booth":639,
+    "Giveaway":"Las Vegas disaster recovery kit, cell phone and tablet cleaners, bags, Amazon gift card giveaway contest for following @attunity"
   }
 ]
