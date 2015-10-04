@@ -1,50 +1,37 @@
 [
   {
-    "What is the name of the event or party?": "t2.microbrews",
-    "Who can attend?": "All attendees",
-    "Is there a fee or charge?": "no",
-    "What is the event/party URL or invite link?": "http://t2microbrews.splashthat.com",
-    "Date and start time of event / party?": "10/6 19:00",
-    "Where is the event?": "Public House in the Venetian"
+    "Event": "t2.microbrews",
+    "Who": "All attendees",
+    "Fee": "Free",
+    "Starttime": "10/6 19:00",
+    "Where": "Public House in the Venetian"
   },
   {
-    "What is the name of the event or party?": "VIctorOps and StatusPage HH",
-    "Who can attend?": "All attendees",
-    "Is there a fee or charge?": "no",
-    "What is the event/party URL or invite link?": "https://www.statuspage.io/aws-pubcrawl-2015",
-    "Date and start time of event / party?": "10/7 17:30",
-    "Where is the event?": "The Bourbon Room"
+    "Event": "VIctorOps and StatusPage HH",
+    "Who": "All attendees",
+    "Fee": "Free",
+    "Starttime": "10/7 17:30",
+    "Where": "The Bourbon Room"
   },
   {
-    "What is the name of the event or party?": "Datadog/Pagerduty/Logentries PubCrawl at AquaKnox",
-    "Who can attend?": "All attendees",
-    "Is there a fee or charge?": "Free for all re:Invent attendees",
-    "What is the event/party URL or invite link?": "http://go.datadoghq.com/pub-crawl-2015",
-    "Date and start time of event / party?": "10/7 17:30",
-    "Where is the event?": "AquaKnox - Venetian"
+    "Event": "Datadog/Pagerduty/Logentries PubCrawl at AquaKnox",
+    "Who": "All attendees",
+    "Fee": "Free for all re:Invent attendees",
+    "Starttime": "10/7 17:30",
+    "Where": "AquaKnox - Venetian"
   },
   {
-    "What is the name of the event or party?": "Pub Crawl at Aquaknox",
-    "Who can attend?": "All attendees",
-    "Is there a fee or charge?": "no",
-    "What is the event/party URL or invite link?": "https://www.pagerduty.com/aws-reinvent-2015-after-party/",
-    "Date and start time of event / party?": "10/7 17:30",
-    "Where is the event?": "Aquaknox"
+    "Event": "Pub Crawl at Aquaknox",
+    "Who": "All attendees",
+    "Fee": "Free",
+    "Starttime": "10/7 17:30",
+    "Where": "Aquaknox"
   },
   {
-    "What is the name of the event or party?": "Pub Crawl at Aquaknox",
-    "Who can attend?": "All attendees",
-    "Is there a fee or charge?": "no",
-    "What is the event/party URL or invite link?": "https://www.pagerduty.com/aws-reinvent-2015-after-party/",
-    "Date and start time of event / party?": "10/7 17:30",
-    "Where is the event?": "Aquaknox"
-  },
-  {
-    "What is the name of the event or party?": "VictorOps and StatusPage HH",
-    "Who can attend?": "All attendees",
-    "Is there a fee or charge?": "no",
-    "What is the event/party URL or invite link?": "https://www.statuspage.io/aws-pubcrawl-2015",
-    "Date and start time of event / party?": "10/7 17:30",
-    "Where is the event?": "The Bourbon Room"
+    "Event": "VictorOps and StatusPage HH",
+    "Who": "All attendees",
+    "Fee": "Free",
+    "Starttime": "10/7 17:30",
+    "Where": "The Bourbon Room"
   }
 ]

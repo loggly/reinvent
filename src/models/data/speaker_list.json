@@ -1,52 +1,42 @@
 [
   {
-    "Who can attend?": 0,
-    "Is there a fee or charge?": 0,
-    "Session Name": "LT118 - Accelerate Your DevOps Transformation: Learn How to Move to Continuous Delivery with AWS EC2 and ECS",
-    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=cloudbees&searchType=session&tc=0&sortBy=abbreviationSort&p=",
-    "Company Name": "CloudBees",
-    "Session Level": "Introductory",
-    "What day is the session?": "Wednesday",
-    "What Time is the Session": "2:25:00 PM"
+    "Company": "CloudBees",
+    "Session": "LT118 - Accelerate Your DevOps Transformation: Learn How to Move to Continuous Delivery with AWS EC2 and ECS",
+    "Day": "Wednesday",
+    "Time": "2:25:00 PM",
+    "Level": "Introductory",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=cloudbees&searchType=session&tc=0&sortBy=abbreviationSort&p="
   },
   {
-    "Who can attend?": "All attendees",
-    "Is there a fee or charge?": "no",
-    "Session Name": "ISM208 - The Science of Saving With AWS Reserved Instances",
-    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Cloudability&searchType=session&tc=0&sortBy=abbreviationSort&p=",
-    "Company Name": "Cloudability",
-    "Session Level": "Introductory",
-    "What day is the session?": "Wednesday",
-    "What Time is the Session": "1:30:00 PM"
+    "Company": "Cloudability",
+    "Session": "ISM208 - The Science of Saving With AWS Reserved Instances",
+    "Day": "Wednesday",
+    "Time": "1:30:00 PM",
+    "Level": "Introductory",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Cloudability&searchType=session&tc=0&sortBy=abbreviationSort&p="
   },
   {
-    "Who can attend?": "All attendees",
-    "Is there a fee or charge?": "Free for all re:Invent attendees",
-    "Session Name": "DVO205 - Monitoring Evolution: From Flying Blind to Flying Instrument",
-    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Datadog&searchType=session&tc=0&sortBy=abbreviationSort&p=",
-    "Company Name": "Datadog",
-    "Session Level": "Introductory",
-    "What day is the session?": "Wednesday",
-    "What Time is the Session": "11:00:00 AM"
+    "Company": "Datadog",
+    "Session": "DVO205 - Monitoring Evolution: From Flying Blind to Flying Instrument",
+    "Day": "Wednesday",
+    "Time": "11:00:00 AM",
+    "Level": "Introductory",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Datadog&searchType=session&tc=0&sortBy=abbreviationSort&p="
   },
   {
-    "Who can attend?": 0,
-    "Is there a fee or charge?": 0,
-    "Session Name": "SEC205 - Learn How to Hackproof Your Cloud Using Native AWS Tools",
-    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=CloudCheckr&searchType=session&tc=0&sortBy=abbreviationSort&p=",
-    "Company Name": "CloudCheckr",
-    "Session Level": "All Levels",
-    "What day is the session?": "Wednesday",
-    "What Time is the Session": "1:30:00 PM"
+    "Company": "CloudCheckr",
+    "Session": "SEC205 - Learn How to Hackproof Your Cloud Using Native AWS Tools",
+    "Day": "Wednesday",
+    "Time": "1:30:00 PM",
+    "Level": "All Levels",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=CloudCheckr&searchType=session&tc=0&sortBy=abbreviationSort&p="
   },
   {
-    "Who can attend?": 0,
-    "Is there a fee or charge?": 0,
-    "Session Name": "ISM312 - Stories from the Road:  Panel Discussion - Using Cloud to Achieve Business Agility",
-    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Cloudnexa&searchType=session&tc=0&sortBy=abbreviationSort&p=",
-    "Company Name": "Cloudnexa",
-    "Session Level": "Advanced",
-    "What day is the session?": "Wednesday",
-    "What Time is the Session": "1:30:00 PM"
+    "Company": "Cloudnexa",
+    "Session": "ISM312 - Stories from the Road:  Panel Discussion - Using Cloud to Achieve Business Agility",
+    "Day": "Wednesday",
+    "Time": "1:30:00 PM",
+    "Level": "Advanced",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Cloudnexa&searchType=session&tc=0&sortBy=abbreviationSort&p="
   }
 ]
