@@ -1,247 +1,117 @@
 [
   {
-    "Company":"Skytap",
-    "Booth":104,
-    "Giveaway":"Enter to win a $100 Visa Gift Card"
+    "Company Name": "3scale",
+    "Booth Number": 753,
+    "Describe the giveaway, contest or swag item": "Moleskine notebooks, t-shirts, stickers, and a drawing each day for a BB-8 droid"
   },
   {
-    "Company":"Ansible",
-    "Booth":1038,
-    "Giveaway":"We are giving away 10,000 hats!  Visit the Ansible Hat Booth in the Midway!"
+    "Company Name": "Calm.io",
+    "Booth Number": 447,
+    "Describe the giveaway, contest or swag item": "Very cool \"I am DevOps\" - tshirt."
   },
   {
-    "Company":"Looker",
-    "Booth":1049,
-    "Giveaway":"Tshirt when you view a demo."
+    "Company Name": "Cloud Cruiser",
+    "Booth Number": 1241,
+    "Describe the giveaway, contest or swag item": "Guess how many dice are in the jar and win a beach cruiser bike"
   },
   {
-    "Company":"2nd Watch",
-    "Booth":1112,
-    "Giveaway":"Enter to win a Kindle Fire! Everyone that stops by our booth gets a free 2W tablet/mobile stand."
+    "Company Name": "Cloudability",
+    "Booth Number": 412,
+    "Describe the giveaway, contest or swag item": "Grab a Cloudability t-shirt and learn how you can win an Apple Watch!"
   },
   {
-    "Company":"Loggly",
-    "Booth":850,
-    "Giveaway":"Grab an all-new limited edition Loggly shirt and custom deck of DevOps playing cards."
+    "Company Name": "CloudBees",
+    "Booth Number": 1243,
+    "Describe the giveaway, contest or swag item": "We are giving our awesome Jenkins Master T Shirts, stickers, and pins"
   },
   {
-    "Company":"VictorOps",
-    "Booth":1142,
-    "Giveaway":"Comfy shirts & a Tales of the Victors comic book"
+    "Company Name": "CloudCheckr",
+    "Booth Number": 809,
+    "Describe the giveaway, contest or swag item": "t-shirts"
   },
   {
-    "Company":"Moxtra",
-    "Booth":1431,
-    "Giveaway":"Cool T-Shirts, Stickers"
+    "Company Name": "CloudHealth Technologies",
+    "Booth Number": 924,
+    "Describe the giveaway, contest or swag item": "“Wicked\" comfy t-shirts, flashy light up buttons, a brilliantly fun Rubik's Cube \"Cloud Genius\" challenge and a Parrot Bebop drone raffle!"
   },
   {
-    "Company":"CloudVelox",
-    "Booth":1242,
-    "Giveaway":"Drawing for Drone Aircraft"
+    "Company Name": "CloudMGR",
+    "Booth Number": 450,
+    "Describe the giveaway, contest or swag item": "Swag"
   },
   {
-    "Company":"Docker",
-    "Booth":1145,
-    "Giveaway":"Giving away T-shirts and stickers"
+    "Company Name": "CloudMGR",
+    "Booth Number": 450,
+    "Describe the giveaway, contest or swag item": "T-Shirts & Mobile App - Get 400 Points by Visiting our Stand for a Demo"
   },
   {
-    "Company":"CloudHealth Technologies",
-    "Booth":739,
-    "Giveaway":"GoPro Hero4 Booth Raffle - New winner each day of the expo!"
+    "Company Name": "Cloudnexa",
+    "Booth Number": 1320,
+    "Describe the giveaway, contest or swag item": "GoPro Hero drawings hourly!  Don't forget to pick up our latest t-shirt."
   },
   {
-    "Company":"New Relic",
-    "Booth":631,
-    "Giveaway":"Come get your very own Data Nerd billboard created, and grab one of our cool tshirts while you're at it!"
+    "Company Name": "CloudVelox",
+    "Booth Number": 332,
+    "Describe the giveaway, contest or swag item": "High Performance Drone"
   },
   {
-    "Company":"Datadog",
-    "Booth":600,
-    "Giveaway":"Datadog tee shirts, stickers, and nightly iPad Air 2 drawing!"
+    "Company Name": "Datadog",
+    "Booth Number": 212,
+    "Describe the giveaway, contest or swag item": "Daily Apple Watch giveaway! 1-in-10"
   },
   {
-    "Company":"RightScale",
-    "Booth":609,
-    "Giveaway":"Get A Shirt, Wear a Shirt, Win an Apple/Moto 360 watch!"
+    "Company Name": "dcVAST",
+    "Booth Number": 855,
+    "Describe the giveaway, contest or swag item": "GoPro Hero 4"
   },
   {
-    "Company":"Ostrato",
-    "Booth":441,
-    "Giveaway":"BOSE Noise Canceling Headphones"
+    "Company Name": "Dome9",
+    "Booth Number": 1124,
+    "Describe the giveaway, contest or swag item": "DJI Phantom Drone & Mini Drone Contest, Cool Shirts and Stickers!"
   },
   {
-    "Company":"CloudBees",
-    "Booth":1250,
-    "Giveaway":"Very cool Jenkins Master t-shirt"
+    "Company Name": "ExitCertified",
+    "Booth Number": 1237,
+    "Describe the giveaway, contest or swag item": "Draw for a GoPro Camera and a draw for an AWS Training Course"
   },
   {
-    "Company":"Ravello Systems ",
-    "Booth":736,
-    "Giveaway":"Razor scooters and t-shirts saying \"Migration is for the birds, my VMs are nested\""
+    "Company Name": "FortyCloud",
+    "Booth Number": 537,
+    "Describe the giveaway, contest or swag item": "Chubby Unicon\" T-Shirt and FitBit Surge"
   },
   {
-    "Company":"Bitnami ",
-    "Booth":325,
-    "Giveaway":"Stop by for a free Bitnami T-shirt! "
+    "Company Name": "PagerDuty",
+    "Booth Number": 102,
+    "Describe the giveaway, contest or swag item": "Our Custom Alert Sound Contest - The winner of our contest will receive a Jambo and have their alert noise added to the app."
   },
   {
-    "Company":"INetU",
-    "Booth":326,
-    "Giveaway":"We will have a Magician at our booth"
+    "Company Name": "Panzura",
+    "Booth Number": 743,
+    "Describe the giveaway, contest or swag item": "Contest: Enter to Win an iPad Air. Swag: Slingshot \"Flying\" Pigs"
   },
   {
-    "Company":"Cloud Cruiser",
-    "Booth":129,
-    "Giveaway":"Quadcopter w/ Camera Giveaway"
+    "Company Name": "Platform9",
+    "Booth Number": 122,
+    "Describe the giveaway, contest or swag item": "Cool T-shirts for all and a daily raffle for Bose QuietComfort Noise Cancelling Headphones"
   },
   {
-    "Company":"Cloud Manager Inc",
-    "Booth":451,
-    "Giveaway":"Kindle Fire"
+    "Company Name": "Solano Labs",
+    "Booth Number": 1245,
+    "Describe the giveaway, contest or swag item": "Tshirts, Pens, and Reusable Tote Bags"
   },
   {
-    "Company":"Crittercism",
-    "Booth":1030,
-    "Giveaway":"Critters!"
+    "Company Name": "Sophos",
+    "Booth Number": 106,
+    "Describe the giveaway, contest or swag item": "Cool and fun Sopos socks"
   },
   {
-    "Company":"CertiVox",
-    "Booth":849,
-    "Giveaway":"$10,000 developer competition and a Macbook Air giveaway"
+    "Company Name": "Teridion",
+    "Booth Number": 435,
+    "Describe the giveaway, contest or swag item": "Daily drawing for motorized drifting board"
   },
   {
-    "Company":"Genie9",
-    "Booth":1138,
-    "Giveaway":"Free Unlimited subscription for G Cloud backup for Android App for 1 year"
-  },
-  {
-    "Company":"Emind",
-    "Booth":328,
-    "Giveaway":"AWS Architectural Toolbox"
-  },
-  {
-    "Company":"Threat Stack",
-    "Booth":742,
-    "Giveaway":"Drawing to give away 3 Amazon Fire TVs, freshly printed t-shirts will be giveaways for booth visitors"
-  },
-  {
-    "Company":"Xplenty",
-    "Booth":535,
-    "Giveaway":"Amazon Kindle Fire, The coolest T-shirts, and much more!"
-  },
-  {
-    "Company":"DISYS",
-    "Booth":439,
-    "Giveaway":"Sunglasses, Kindle Fire HD"
-  },
-  {
-    "Company":"VividCortex",
-    "Booth":550,
-    "Giveaway":"Animal Hats"
-  },
-  {
-    "Company":"FoundationDB",
-    "Booth":536,
-    "Giveaway":"Free t-shirts, stickers"
-  },
-  {
-    "Company":"Ping Identity",
-    "Booth":636,
-    "Giveaway":"cool t-shirt, aluminum bottle openers, koozies"
-  },
-  {
-    "Company":"Tango.Me",
-    "Booth":1150,
-    "Giveaway":"Daily Tablet Giveaways, DevOps Contest, We are hiring, meet our hiring managers"
-  },
-  {
-    "Company":"PagerDuty",
-    "Booth":948,
-    "Giveaway":"MacBook Air, GoPro, Uber Gift Card, Pebble Steel Watch"
-  },
-  {
-    "Company":"ElasticBox",
-    "Booth":612,
-    "Giveaway":"Over the Ear Headphones and Totes"
-  },
-  {
-    "Company":"Appcito",
-    "Booth":1239,
-    "Giveaway":"One-of-a-kind, ultra-cool Appcito stainless steel travel mugs"
-  },
-  {
-    "Company":"Rapid7",
-    "Booth":637,
-    "Giveaway":"Stop by our booth for a chance to win a Toucan bluetooth wireless speaker!"
-  },
-  {
-    "Company":"Scalable",
-    "Booth":1338,
-    "Giveaway":"Texas Hot Sauce in 3 oz Bottles"
-  },
-  {
-    "Company":"Boundary",
-    "Booth":1129,
-    "Giveaway":"Join us at the booth or twitter: #alotcanhappenin1second @boundary to have chance to win Oculus Rift 2 Developers' Kit and Bluesmart"
-  },
-  {
-    "Company":"Bitnami ",
-    "Booth":325,
-    "Giveaway":"Meet up with Bitnami and our partners, TIBCO Jaspersoft, MongoLab, NuoDB, and MapR. Stop by our booths for a chance to win prizes!"
-  },
-  {
-    "Company":"Cloudability",
-    "Booth":1012,
-    "Giveaway":"Giving away t-shirts"
-  },
-  {
-    "Company":"Runscope",
-    "Booth":731,
-    "Giveaway":"Contest: Runscope 200 OK Challenge - solve API puzzles asynchronously, compete against other developers (there's a leaderboard), win amazing prizes and eternal glory.  General swag: Runscope 200 OK t-shirts"
-  },
-  {
-    "Company":"Cloudnexa",
-    "Booth":418,
-    "Giveaway":"Win a Motor Scooter!  Drawings Wed & Thurs @ 5:45pm at the booth! We have cool t-shirts too!"
-  },
-  {
-    "Company":"Dome9",
-    "Booth":1036,
-    "Giveaway":"GoPro Hero 4 raffle + cell chargers, earbuds & candy"
-  },
-  {
-    "Company":"Solano Labs",
-    "Booth":530,
-    "Giveaway":"Custom CI Demos & Advice, Free T-Shirts, Tote Bags, Stickers and Pens"
-  },
-  {
-    "Company":"Evident.io",
-    "Booth":1003,
-    "Giveaway":"quality hoodies/t-shirts, Amazon giftcards, stickers"
-  },
-  {
-    "Company":"Brightcove",
-    "Booth":218,
-    "Giveaway":"Contest: raffle for 1 year of free Zencoder transcoding (a $3,600 value). Giveaways: mobile chargers, backpacks, notebooks, pens"
-  },
-  {
-    "Company":"Cloudly",
-    "Booth":449,
-    "Giveaway":"Apple iPhone 6 & Week Long Free Assessment With Cloudly Architects"
-  },
-  {
-    "Company":"Nuix",
-    "Booth":315,
-    "Giveaway":"Spin the wheel for your chance to win a GoPro and Tickets to Rock of Ages"
-  },
-  {
-    "Company":"Soasta",
-    "Booth":437,
-    "Giveaway":"Go Pro 3+ Silver Edition"
-  },
-  {
-    "Company":"Orchestrate",
-    "Booth":1432,
-    "Giveaway":"The only all-in-one database service is giving away a Pinoccio (pinnocc.io) board. Come by the booth and pick up a pair of sunglasses, shirts, stickers, and enter to win. "
+    "Company Name": "VictorOps",
+    "Booth Number": 543,
+    "Describe the giveaway, contest or swag item": "Subscribe to our status page: https://awsreinvent.statuspage.io/"
   }
 ]

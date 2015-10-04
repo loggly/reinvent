@@ -1,107 +1,52 @@
 [
   {
-    "Company":"Loggly",
-    "Session":"Amazon Route 53 Deep Dive: Delivering Resiliency, Minimizing Latency",
-    "Day":"Wednesday",
-    "Time":"TBD",
-    "Level":"Expert"
+    "Who can attend?": 0,
+    "Is there a fee or charge?": 0,
+    "Session Name": "LT118 - Accelerate Your DevOps Transformation: Learn How to Move to Continuous Delivery with AWS EC2 and ECS",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=cloudbees&searchType=session&tc=0&sortBy=abbreviationSort&p=",
+    "Company Name": "CloudBees",
+    "Session Level": "Introductory",
+    "What day is the session?": "Wednesday",
+    "What Time is the Session": "2:25:00 PM"
   },
   {
-    "Company":"Looker",
-    "Session":"Modern BI @ AWS Marketplace",
-    "Day":"Thursday",
-    "Time":"5:15 PM",
-    "Level":"Introductory"
+    "Who can attend?": "All attendees",
+    "Is there a fee or charge?": "no",
+    "Session Name": "ISM208 - The Science of Saving With AWS Reserved Instances",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Cloudability&searchType=session&tc=0&sortBy=abbreviationSort&p=",
+    "Company Name": "Cloudability",
+    "Session Level": "Introductory",
+    "What day is the session?": "Wednesday",
+    "What Time is the Session": "1:30:00 PM"
   },
   {
-    "Company":"Datadog",
-    "Session":"APP309 - Running & Monitoring Docker Containers at Scale",
-    "Day":"Wednesday",
-    "Time":"4:30 PM",
-    "Level":"Advanced"
+    "Who can attend?": "All attendees",
+    "Is there a fee or charge?": "Free for all re:Invent attendees",
+    "Session Name": "DVO205 - Monitoring Evolution: From Flying Blind to Flying Instrument",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Datadog&searchType=session&tc=0&sortBy=abbreviationSort&p=",
+    "Company Name": "Datadog",
+    "Session Level": "Introductory",
+    "What day is the session?": "Wednesday",
+    "What Time is the Session": "11:00:00 AM"
   },
   {
-    "Company":"RightScale",
-    "Session":"AWS & VMware: How to Architect & Manage Hybrid Environments",
-    "Day":"Thursday",
-    "Time":"3:15 PM",
-    "Level":"Expert"
+    "Who can attend?": 0,
+    "Is there a fee or charge?": 0,
+    "Session Name": "SEC205 - Learn How to Hackproof Your Cloud Using Native AWS Tools",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=CloudCheckr&searchType=session&tc=0&sortBy=abbreviationSort&p=",
+    "Company Name": "CloudCheckr",
+    "Session Level": "All Levels",
+    "What day is the session?": "Wednesday",
+    "What Time is the Session": "1:30:00 PM"
   },
   {
-    "Company":"Cycle Computing",
-    "Session":"HPC on AWS: Results from the Record-breaking 156,000 Core MegaRun, and Insights to On-demand Clusters for Manufacturing Production Workloads",
-    "Day":"Friday",
-    "Time":"10:00 AM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Docker",
-    "Session":"APP303 - Lightning Fast Deploys with Docker Containers and AWS",
-    "Day":"Thursday",
-    "Time":"2:15 PM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Yamaha & 2nd Watch",
-    "Session":"Yamaha Corporation: Migrating Business Applications to AWS ",
-    "Day":"Thursday",
-    "Time":"2:15 PM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Ping Identity",
-    "Session":"Integrating AWS with External Identity Management",
-    "Day":"Thursday",
-    "Time":"4:30 PM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Infor",
-    "Session":"ENT202 - Four Keys to Move Your Core Business Applications to the Cloud",
-    "Day":"Wednesday",
-    "Time":"11:00 AM",
-    "Level":"All Levels"
-  },
-  {
-    "Company":"PagerDuty",
-    "Session":"CTO-to-CTO Fireside Chat with Dr. Werner Vogels",
-    "Day":"Thursday",
-    "Time":"2:00 PM",
-    "Level":"All Levels"
-  },
-  {
-    "Company":"Socialmetrix",
-    "Session":"ARC202 - Real-World Real-Time Analytics",
-    "Day":"Thursday",
-    "Time":"5:30 PM",
-    "Level":"All Levels"
-  },
-  {
-    "Company":"Cloudability",
-    "Session":"ENT207 - Creating a Culture of Cost Management in Your Organization",
-    "Day":"Wednesday",
-    "Time":"2:15 PM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Cloudability",
-    "Session":"ENT203 - Iterating Your Way To 95% Reserved Instance Usage",
-    "Day":"Wednesday",
-    "Time":"4:30 PM",
-    "Level":"Advanced"
-  },
-  {
-    "Company":"Cloudnexa & Clear ",
-    "Session":"What do Airports & Sports Stadiums Have in Common? Managed Cloud Solutions Underpin Fast Secure Entry",
-    "Day":"Thursday",
-    "Time":"2:00 PM",
-    "Level":"Introductory"
-  },
-  {
-    "Company":"Dome9",
-    "Session":"Deep Dive Demo on AWS Security (@booth 1036)",
-    "Day":"Wednesday",
-    "Time":"1:00 PM",
-    "Level":"All Levels"
+    "Who can attend?": 0,
+    "Is there a fee or charge?": 0,
+    "Session Name": "ISM312 - Stories from the Road:  Panel Discussion - Using Cloud to Achieve Business Agility",
+    "Link to Session": "https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=Cloudnexa&searchType=session&tc=0&sortBy=abbreviationSort&p=",
+    "Company Name": "Cloudnexa",
+    "Session Level": "Advanced",
+    "What day is the session?": "Wednesday",
+    "What Time is the Session": "1:30:00 PM"
   }
 ]
