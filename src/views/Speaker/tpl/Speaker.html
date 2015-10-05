@@ -1,11 +1,15 @@
 <div>
     <div class="session">
-        <a href="{{Link}}" target="_system">{{Session}}</a>
+        {{#if Link}}
+            <a href="{{Link}}" target="_blank">{{Session}}</a>
+        {{else}}
+            <a href="#nolink">{{Session}}</a>
+        {{/if}}
     </div>
     <div class="company">
         {{Company}}
     </div>
     <div class="day-and-time">
-        <span class="level">{{Level}}</span> - <span class="time">{{Moment When "ddd, h:mma"}}</span>
+        <span class="level">{{Level}}</span> - <span class="time">{{When}}</span>
     </div>
 </div>

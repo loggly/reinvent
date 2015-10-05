@@ -3,105 +3,105 @@
     "Company":"Infor",
     "Session":"ENT202 - Four Keys to Move Your Core Business Applications to the Cloud",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10644",
-    "When":"11/12 11:00",
+    "When":"Wednesday 11:00am",
     "Level":"All Levels"
   },
   {
     "Company":"Dome9",
     "Session":"Deep Dive Demo on AWS Security (@booth 1036)",
     "Link":"",
-    "When":"11/12 13:00",
+    "When":"Wednesday 1:00pm",
     "Level":"All Levels"
   },
   {
     "Company":"Loggly",
     "Session":"SDD408 - Amazon Route 53 Deep Dive: Delivering Resiliency, Minimizing Latency",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=8992&tclass=popup",
-    "When":"11/12 13:15",
+    "When":"Wednesday 1:15pm",
     "Level":"Expert"
   },
   {
     "Company":"Cloudability",
     "Session":"ENT207 - Creating a Culture of Cost Management in Your Organization",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10848",
-    "When":"11/12 14:15",
+    "When":"Wednesday 2:15pm",
     "Level":"Advanced"
   },
   {
     "Company":"Datadog",
     "Session":"APP309 - Running & Monitoring Docker Containers at Scale",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10584",
-    "When":"11/12 16:30",
+    "When":"Wednesday 4:30pm",
     "Level":"Advanced"
   },
   {
     "Company":"Cloudability",
     "Session":"ENT203 - Iterating Your Way To 95% Reserved Instance Usage",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10846",
-    "When":"11/12 16:30",
+    "When":"Wednesday 4:30pm",
     "Level":"Advanced"
   },
   {
     "Company":"PagerDuty",
     "Session":"CTO-to-CTO Fireside Chat with Dr. Werner Vogels",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/search.ww#loadSearch-searchPhrase=miklas&searchType=speaker&tc=0&sortBy=",
-    "When":"11/13 14:00",
+    "When":"Thursday 2:00pm",
     "Level":"All Levels"
   },
   {
     "Company":"Cloudnexa & Clear ",
     "Session":"What do Airports & Sports Stadiums Have in Common? Managed Cloud Solutions Underpin Fast Secure Entry",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10904",
-    "When":"11/13 14:00",
+    "When":"Thursday 2:00pm",
     "Level":"Introductory"
   },
   {
     "Company":"Docker",
     "Session":"APP303 - Lightning Fast Deploys with Docker Containers and AWS",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=8977",
-    "When":"11/13 14:15",
+    "When":"Thursday 2:15pm",
     "Level":"Advanced"
   },
   {
     "Company":"Yamaha & 2nd Watch",
     "Session":"Yamaha Corporation: Migrating Business Applications to AWS ",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=11284",
-    "When":"11/13 14:15",
+    "When":"Thursday 2:15pm",
     "Level":"Advanced"
   },
   {
     "Company":"RightScale",
     "Session":"AWS & VMware: How to Architect & Manage Hybrid Environments",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=10966",
-    "When":"11/13 15:15",
+    "When":"Thursday 3:15pm",
     "Level":"Expert"
   },
   {
     "Company":"Ping Identity",
     "Session":"Integrating AWS with External Identity Management",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=9439",
-    "When":"11/13 16:30",
+    "When":"Thursday 4:30pm",
     "Level":"Advanced"
   },
   {
     "Company":"Looker",
     "Session":"Modern BI @ AWS Marketplace",
     "Link":"",
-    "When":"11/13 17:15",
+    "When":"Thursday 5:15pm",
     "Level":"Introductory"
   },
   {
     "Company":"Socialmetrix",
     "Session":"ARC202 - Real-World Real-Time Analytics",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=8813",
-    "When":"11/13 17:30",
+    "When":"Thursday 5:30pm",
     "Level":"All Levels"
   },
   {
     "Company":"Cycle Computing",
     "Session":"HPC on AWS: Results from the Record-breaking 156,000 Core MegaRun, and Insights to On-demand Clusters for Manufacturing Production Workloads",
     "Link":"https://www.portal.reinvent.awsevents.com/connect/sessionDetail.ww?SESSION_ID=9885",
-    "When":"11/14 10:00",
+    "When":"Friday 10:00am",
     "Level":"Advanced"
   }
 ]
